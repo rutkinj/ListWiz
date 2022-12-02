@@ -17,8 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintTop_toBottomOf="@+id/AddTVTitle"
+        app:layout_constraintVertical_bias="0.478" />
 
     <TextView
         android:id="@+id/AddTVTaskTitleHeader"
@@ -26,7 +26,9 @@
         android:layout_height="wrap_content"
         android:text="Task Title"
         app:layout_constraintBottom_toTopOf="@+id/AddETTaskTitle"
-        tools:layout_editor_absoluteX="100dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/AddTVTaskDescHeader"
@@ -34,19 +36,22 @@
         android:layout_height="wrap_content"
         android:text="Task Description"
         app:layout_constraintBottom_toTopOf="@+id/AddETTaskDesc"
-        tools:layout_editor_absoluteX="103dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/AddETTaskDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="236dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/AddTVTitle"
