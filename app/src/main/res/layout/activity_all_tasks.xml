@@ -11,15 +11,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="All Tasks"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="240dp"
         android:layout_height="236dp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="183dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
