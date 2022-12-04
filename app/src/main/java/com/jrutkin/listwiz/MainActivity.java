@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        buttonSetup();
+    }
+
+    private void buttonSetup(){
         Button addTaskButton = MainActivity.this.findViewById(R.id.MainButtonAddTask);
         addTaskButton.setOnClickListener(view -> {
             Intent goToAddTaskActivity = new Intent(this, AddTask.class);
