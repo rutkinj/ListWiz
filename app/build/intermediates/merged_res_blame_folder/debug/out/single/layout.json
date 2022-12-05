@@ -20,11 +20,11 @@
         "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-34:/layout/activity_task_detail.xml"
     },
     {
-        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-31:/layout/activity_main.xml",
-        "source": "com.jrutkin.listwiz.app-main-34:/layout/activity_main.xml"
+        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-mergeDebugResources-31:/layout/fragment_task.xml",
+        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-34:/layout/fragment_task.xml"
     },
     {
-        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-31:/layout/activity_task_detail.xml",
-        "source": "com.jrutkin.listwiz.app-main-34:/layout/activity_task_detail.xml"
+        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "com.jrutkin.listwiz.app-main-34:/layout/activity_main.xml"
     }
 ]

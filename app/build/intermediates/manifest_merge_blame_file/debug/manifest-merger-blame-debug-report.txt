@@ -34,8 +34,8 @@
 22-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:13:9-45
 23        <activity
 23-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:15:9-21:20
-24            android:name="com.jrutkin.listwiz.TaskDetailActivity"
-24-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:16:13-47
+24            android:name="com.jrutkin.listwiz.activities.TaskDetailActivity"
+24-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:16:13-58
 25            android:exported="false" >
 25-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:17:13-37
 26            <meta-data
@@ -47,8 +47,8 @@
 29        </activity>
 30        <activity
 30-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:22:9-28:20
-31            android:name="com.jrutkin.listwiz.UserProfileActivity"
-31-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:23:13-48
+31            android:name="com.jrutkin.listwiz.activities.UserProfileActivity"
+31-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:23:13-59
 32            android:exported="false" >
 32-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:24:13-37
 33            <meta-data
@@ -60,8 +60,8 @@
 36        </activity>
 37        <activity
 37-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:29:9-35:20
-38            android:name="com.jrutkin.listwiz.AllTasks"
-38-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:30:13-37
+38            android:name="com.jrutkin.listwiz.activities.AllTasksActivity"
+38-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:30:13-56
 39            android:exported="false" >
 39-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:31:13-37
 40            <meta-data
@@ -73,8 +73,8 @@
 43        </activity>
 44        <activity
 44-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:36:9-42:20
-45            android:name="com.jrutkin.listwiz.AddTask"
-45-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:37:13-36
+45            android:name="com.jrutkin.listwiz.activities.AddTaskActivity"
+45-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:37:13-55
 46            android:exported="false" >
 46-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:38:13-37
 47            <meta-data
@@ -86,8 +86,8 @@
 50        </activity>
 51        <activity
 51-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:43:9-55:20
-52            android:name="com.jrutkin.listwiz.MainActivity"
-52-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:44:13-41
+52            android:name="com.jrutkin.listwiz.activities.MainActivity"
+52-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:44:13-52
 53            android:exported="true" >
 53-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:45:13-36
 54            <intent-filter>
