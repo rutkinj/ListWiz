@@ -12,12 +12,15 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String TASK_NAME_TAG = "taskName";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         buttonSetup();
+        taskButtonsSetup();
     }
 
     @Override
@@ -52,5 +55,28 @@ public class MainActivity extends AppCompatActivity {
         String username = sharedPrefs.getString(UserProfileActivity.USERNAME_TAG, "No username");
 
         ((TextView)findViewById(R.id.MainTVUsername)).setText(username);
+    }
+
+    public void taskButtonsSetup(){
+
+        Button gymButton = findViewById(R.id.MainButtonTaskGym);
+        gymButton.setOnClickListener(view -> {
+            goToTaskDetailViaButton(gymButton);
+        });
+
+        Button tanButton = findViewById(R.id.MainButtonTaskTan);
+        tanButton.setOnClickListener(view -> {
+            goToTaskDetailViaButton(tanButton);
+        });
+        Button laundryButton = findViewById(R.id.MainButtonTaskLaundry);
+        laundryButton.setOnClickListener(view -> {
+            goToTaskDetailViaButton(laundryButton);
+        });
+    }
+
+    public void goToTaskDetailViaButton(Button taskButton){
+        Intent goToTaskDetail = new Intent(this, TaskDetailActivity.class);
+        goToTaskDetail.putExtra(TASK_NAME_TAG, taskButton.getText().toString());
+        startActivity(goToTaskDetail);
     }
 }

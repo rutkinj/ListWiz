@@ -60,27 +60,27 @@
         android:layout_marginStart="158dp"
         android:layout_marginEnd="159dp"
         android:text="GYM"
-        app:layout_constraintBottom_toTopOf="@+id/mainButtonTaskTan"
+        app:layout_constraintBottom_toTopOf="@+id/MainButtonTaskTan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainTVUsername" />
 
     <Button
-        android:id="@+id/mainButtonTaskTan"
+        android:id="@+id/MainButtonTaskTan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="159dp"
         android:text="TAN"
-        app:layout_constraintBottom_toTopOf="@+id/mainButtonTaskLaundry"
+        app:layout_constraintBottom_toTopOf="@+id/MainButtonTaskLaundry"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainButtonTaskGym" />
 
     <Button
-        android:id="@+id/mainButtonTaskLaundry"
+        android:id="@+id/MainButtonTaskLaundry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
@@ -90,6 +90,6 @@
         app:layout_constraintBottom_toTopOf="@+id/MainButtonAllTasks"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mainButtonTaskTan" />
+        app:layout_constraintTop_toBottomOf="@+id/MainButtonTaskTan" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
