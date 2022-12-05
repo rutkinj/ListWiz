@@ -1,0 +1,7 @@
+com.jrutkin.listwiz.test.app-androidTest-0 /Users/jsr/Documents/codefellows/labs/ListWiz/app/build/generated/res/resValues/androidTest/debug
+com.jrutkin.listwiz.test.app-androidTest-1 /Users/jsr/Documents/codefellows/labs/ListWiz/app/build/generated/res/rs/androidTest/debug
+com.jrutkin.listwiz.test.app-mergeDebugAndroidTestResources-2 /Users/jsr/Documents/codefellows/labs/ListWiz/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.jrutkin.listwiz.test.app-mergeDebugAndroidTestResources-3 /Users/jsr/Documents/codefellows/labs/ListWiz/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.jrutkin.listwiz.test.app-merged_res-4 /Users/jsr/Documents/codefellows/labs/ListWiz/app/build/intermediates/merged_res/debugAndroidTest
+com.jrutkin.listwiz.test.app-androidTest-5 /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/androidTest/res
+com.jrutkin.listwiz.test.app-androidTestDebug-6 /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/androidTestDebug/res

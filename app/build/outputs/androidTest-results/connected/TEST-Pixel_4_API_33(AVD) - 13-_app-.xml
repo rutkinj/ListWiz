@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.jrutkin.listwiz.MainActivityUsernameTest" tests="1" failures="0" errors="0" skipped="0" time="2.626" timestamp="2022-12-05T00:37:06" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_4_API_33(AVD) - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="mainActivityUsernameTest" classname="com.jrutkin.listwiz.MainActivityUsernameTest" time="2.449" />
+</testsuite>

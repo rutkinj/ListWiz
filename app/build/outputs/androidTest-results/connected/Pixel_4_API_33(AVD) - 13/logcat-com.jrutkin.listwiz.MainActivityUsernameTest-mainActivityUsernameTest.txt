@@ -1,0 +1,375 @@
+12-04 16:37:02.716 10241 10264 I TestRunner: started: mainActivityUsernameTest(com.jrutkin.listwiz.MainActivityUsernameTest)
+12-04 16:37:02.719 10241 10264 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+12-04 16:37:02.721 10241 10264 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10157; state: ENABLED
+12-04 16:37:02.741   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.745   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f1ed8000 0x1f2840000]
+12-04 16:37:02.756   366   366 D Zygote  : Forked child process 10266
+12-04 16:37:02.756   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.757   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f2840000 0x1f31a8000]
+12-04 16:37:02.761   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f31a8000 0x1f3b10000]
+12-04 16:37:02.763 10266 10266 I in.listwiz.test: Late-enabling -Xcheck:jni
+12-04 16:37:02.771   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.772   847   909 W Parcel  : Expecting binder but got null!
+12-04 16:37:02.791   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.796  1712  1728 I adbd    : jdwp connection from 10266
+12-04 16:37:02.807   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.820 10266 10266 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10158; state: ENABLED
+12-04 16:37:02.825   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.829  2863  2863 I GsaVoiceInteractionSrv: Handling ACTION_STOP_HOTWORD
+12-04 16:37:02.829 10266 10266 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+12-04 16:37:02.830  2863  3116 E HwDetectorWithState: a: 3
+12-04 16:37:02.833 10266 10266 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+12-04 16:37:02.834 10266 10266 W in.listwiz.test: ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*1628045882]#PCL[/system/framework/android.test.mock.jar*849501951]})
+12-04 16:37:02.835 10266 10266 W ziparchive: Unable to open '/data/app/~~M5A7_S_GDxBoO3ixoGIFMQ==/com.jrutkin.listwiz.test-bIQlf33kp18ThDPua7zY2A==/base.dm': No such file or directory
+12-04 16:37:02.835 10266 10266 W ziparchive: Unable to open '/data/app/~~M5A7_S_GDxBoO3ixoGIFMQ==/com.jrutkin.listwiz.test-bIQlf33kp18ThDPua7zY2A==/base.dm': No such file or directory
+12-04 16:37:02.840   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.851 10266 10266 V GraphicsEnvironment: ANGLE Developer option for 'com.jrutkin.listwiz.test' set to: 'default'
+12-04 16:37:02.852 10266 10266 V GraphicsEnvironment: ANGLE GameManagerService for com.jrutkin.listwiz.test: false
+12-04 16:37:02.852 10266 10266 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+12-04 16:37:02.853 10266 10266 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-04 16:37:02.854 10266 10266 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+12-04 16:37:02.856   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.861 10266 10290 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+12-04 16:37:02.862 10266 10290 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+12-04 16:37:02.863 10266 10290 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+12-04 16:37:02.869 10266 10266 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10158; state: DISABLED
+12-04 16:37:02.869 10266 10266 D CompatibilityChangeReporter: Compat change id reported: 37756858; UID 10158; state: ENABLED
+12-04 16:37:02.872   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.889   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.902 10241 10293 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+12-04 16:37:02.903 10241 10293 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+12-04 16:37:02.905 10241 10293 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+12-04 16:37:02.907   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.917 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: PRE_ON_CREATE
+12-04 16:37:02.917 10241 10241 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+12-04 16:37:02.922   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.938   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.940 10241 10241 W jrutkin.listwiz: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+12-04 16:37:02.941 10241 10241 W jrutkin.listwiz: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+12-04 16:37:02.942 10241 10241 D CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10157; state: DISABLED
+12-04 16:37:02.942 10241 10241 D CompatibilityChangeReporter: Compat change id reported: 37756858; UID 10157; state: ENABLED
+12-04 16:37:02.957   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.962 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: CREATED
+12-04 16:37:02.962 10241 10241 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.jrutkin.listwiz.MainActivity@3d72538
+12-04 16:37:02.963 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: STARTED
+12-04 16:37:02.963 10241 10241 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jrutkin.listwiz.MainActivity@3d72538
+12-04 16:37:02.964 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: RESUMED
+12-04 16:37:02.964 10241 10241 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jrutkin.listwiz.MainActivity@3d72538
+12-04 16:37:02.968 10241 10264 D EventInjectionStrategy: Creating injection strategy with input manager.
+12-04 16:37:02.968 10241 10264 W jrutkin.listwiz: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+12-04 16:37:02.968 10241 10264 W jrutkin.listwiz: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+12-04 16:37:02.968 10241 10264 W jrutkin.listwiz: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+12-04 16:37:02.972   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.983 10241 10291 D HostConnection: createUnique: call
+12-04 16:37:02.984 10241 10291 D HostConnection: HostConnection::get() New Host Connection established 0xb4000072300246d0, tid 10291
+12-04 16:37:02.986 10241 10291 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+12-04 16:37:02.989   847   909 D EGL_emulation: app_time_stats: avg=2964.39ms min=2964.39ms max=2964.39ms count=1
+12-04 16:37:02.990   219   219 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+12-04 16:37:02.990   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:02.990 10241 10291 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+12-04 16:37:02.990 10241 10291 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+12-04 16:37:02.991 10241 10291 D EGL_emulation: eglCreateContext: 0xb400007230028210: maj 3 min 0 rcv 3
+12-04 16:37:02.992 10241 10291 D EGL_emulation: eglMakeCurrent: 0xb400007230028210: ver 3 0 (tinfo 0x744bf40080) (first time)
+12-04 16:37:02.998   219   219 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+12-04 16:37:02.998 10241 10291 I Gralloc4: mapper 4.x is not supported
+12-04 16:37:02.999 10241 10291 D HostConnection: createUnique: call
+12-04 16:37:02.999 10241 10291 D HostConnection: HostConnection::get() New Host Connection established 0xb400007230027850, tid 10291
+12-04 16:37:02.999 10241 10291 D goldfish-address-space: allocate: Ask for block of size 0x100
+12-04 16:37:02.999 10241 10291 D goldfish-address-space: allocate: ioctl allocate returned offset 0x1efff8000 size 0x8000
+12-04 16:37:03.000   219   219 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+12-04 16:37:03.000   218   218 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+12-04 16:37:03.000 10241 10291 W Gralloc4: allocator 4.x is not supported
+12-04 16:37:03.001   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f0000000 0x1f0968000]
+12-04 16:37:03.003 10241 10291 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+12-04 16:37:03.004   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f0968000 0x1f12d0000]
+12-04 16:37:03.004   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f5c38000 0x1f65a0000]
+12-04 16:37:03.006   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.023   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.045 10241 10291 W Parcel  : Expecting binder but got null!
+12-04 16:37:03.047   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.052   559   574 W ziparchive: Unable to open '/data/app/~~8NRbAbI_VJeyP1VZhbgCmA==/com.jrutkin.listwiz-Rem0fvrkN6j4xUAKphk1kg==/base.dm': No such file or directory
+12-04 16:37:03.054   559   574 I ActivityTaskManager: Displayed com.jrutkin.listwiz/.MainActivity: +327ms
+12-04 16:37:03.058   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.071  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3204
+12-04 16:37:03.072  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2100 checkRepeatedly = false, unlocked = true
+12-04 16:37:03.072  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1903 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jrutkin.listwiz fieldId=-1 fieldName=null extras=null}, false)
+12-04 16:37:03.073  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2100 checkRepeatedly = true, unlocked = true
+12-04 16:37:03.074   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.082 10241 10264 W jrutkin.listwiz: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (unsupported, reflection, allowed)
+12-04 16:37:03.095   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.097 10241 10241 W jrutkin.listwiz: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+12-04 16:37:03.097 10241 10241 W jrutkin.listwiz: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+12-04 16:37:03.097 10241 10241 W jrutkin.listwiz: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+12-04 16:37:03.099 10241 10241 W jrutkin.listwiz: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (unsupported, reflection, allowed)
+12-04 16:37:03.099 10241 10241 W jrutkin.listwiz: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (unsupported, reflection, allowed)
+12-04 16:37:03.099 10241 10241 W jrutkin.listwiz: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (unsupported, reflection, allowed)
+12-04 16:37:03.102 10241 10241 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230741/com.jrutkin.listwiz:id/MainIVToUserProfile> and view.getContentDescription() is "Placeholder Image" and Child at position 1 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+12-04 16:37:03.107   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.124   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.139   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.149   371   371 E android.hardware.audio@7.0-impl.ranchu: device/generic/goldfish/audio/stream_out.cpp:updateSourceMetadata:378 failure: Result::NOT_SUPPORTED
+12-04 16:37:03.150   400   517 D AudioFlinger: mixer(0xb400007f64b3a9b0) throttle end: throttle time(36)
+12-04 16:37:03.153 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: PAUSED
+12-04 16:37:03.153 10241 10241 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jrutkin.listwiz.MainActivity@3d72538
+12-04 16:37:03.156   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.162 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.UserProfileActivity@2cd5b3e in: PRE_ON_CREATE
+12-04 16:37:03.162 10241 10241 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.jrutkin.listwiz/.MainActivity }, activity.getIntent()=Intent { cmp=com.jrutkin.listwiz/.UserProfileActivity }, activity=com.jrutkin.listwiz.UserProfileActivity@2cd5b3e
+12-04 16:37:03.172   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.173 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.UserProfileActivity@2cd5b3e in: CREATED
+12-04 16:37:03.173 10241 10241 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.jrutkin.listwiz/.MainActivity }, activity.getIntent()=Intent { cmp=com.jrutkin.listwiz/.UserProfileActivity }, activity=com.jrutkin.listwiz.UserProfileActivity@2cd5b3e
+12-04 16:37:03.174 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.UserProfileActivity@2cd5b3e in: STARTED
+12-04 16:37:03.174 10241 10241 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.jrutkin.listwiz/.MainActivity }, activity.getIntent()=Intent { cmp=com.jrutkin.listwiz/.UserProfileActivity }, activity=com.jrutkin.listwiz.UserProfileActivity@2cd5b3e
+12-04 16:37:03.175 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.UserProfileActivity@2cd5b3e in: RESUMED
+12-04 16:37:03.175 10241 10241 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.jrutkin.listwiz/.MainActivity }, activity.getIntent()=Intent { cmp=com.jrutkin.listwiz/.UserProfileActivity }, activity=com.jrutkin.listwiz.UserProfileActivity@2cd5b3e
+12-04 16:37:03.184   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f6f08000 0x1f7870000]
+12-04 16:37:03.189   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.204   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f4000000 0x1f4968000]
+12-04 16:37:03.205   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f4968000 0x1f52d0000]
+12-04 16:37:03.207   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.216 10241 10291 W Parcel  : Expecting binder but got null!
+12-04 16:37:03.225   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.233   559   574 I ActivityTaskManager: Displayed com.jrutkin.listwiz/.UserProfileActivity: +84ms
+12-04 16:37:03.240   383   445 D goldfish-address-space: claimShared: Ask to claim region [0x1f3b10000 0x1f3b14000]
+12-04 16:37:03.241   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f3b14000 0x1f3b18000]
+12-04 16:37:03.243   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.257   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.273   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.289   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.306   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.323   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.326  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3204
+12-04 16:37:03.327  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2100 checkRepeatedly = false, unlocked = true
+12-04 16:37:03.327  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1903 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jrutkin.listwiz fieldId=-1 fieldName=null extras=null}, false)
+12-04 16:37:03.327  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2100 checkRepeatedly = true, unlocked = true
+12-04 16:37:03.340   559  2399 W InputManager-JNI: Input channel object '70478c1 Splash Screen com.jrutkin.listwiz.test (client)' was disposed without first being removed with the input manager!
+12-04 16:37:03.340   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.356   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.372   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.389   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.405   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.422   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.438   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.456   847   909 D EGL_emulation: app_time_stats: avg=227.38ms min=1.42ms max=8997.32ms count=41
+12-04 16:37:03.456   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.473   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.474  7640  8506 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+12-04 16:37:03.474  7640  8506 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+12-04 16:37:03.479  7640  8506 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+12-04 16:37:03.479 10241 10241 I ViewInteraction: Performing 'replace text(Bob)' action on view (view.getId() is <2131230752/com.jrutkin.listwiz:id/UserProfileETUsername> and Child at position 1 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+12-04 16:37:03.485  7640  8506 I FontLog : Pulling font file for id = 14, cache size = 6 [CONTEXT service_id=132 ]
+12-04 16:37:03.488  7640  8506 I FontLog : Pulling font file for id = 14, cache size = 6 [CONTEXT service_id=132 ]
+12-04 16:37:03.491   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.497 10241 10241 D CompatibilityChangeReporter: Compat change id reported: 163400105; UID 10157; state: ENABLED
+12-04 16:37:03.504 10241 10241 I AssistStructure: Flattened final assist data: 1376 bytes, containing 1 windows, 8 views
+12-04 16:37:03.508   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.509 10241 10241 I ViewInteraction: Performing 'close keyboard' action on view (view.getId() is <2131230752/com.jrutkin.listwiz:id/UserProfileETUsername> and Child at position 1 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+12-04 16:37:03.510 10241 10241 W CloseKeyboardAction: Attempting to close soft keyboard, while it is not shown.
+12-04 16:37:03.512 10241 10241 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230753/com.jrutkin.listwiz:id/UserProfileSubmitButton> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Submit" and Child at position 0 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+12-04 16:37:03.522   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.540   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.556   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.564 10241 10241 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10157; state: ENABLED
+12-04 16:37:03.572   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.581   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f3b18000 0x1f3b60000]
+12-04 16:37:03.583   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f3b60000 0x1f3ba8000]
+12-04 16:37:03.583   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f3ba8000 0x1f3bf0000]
+12-04 16:37:03.585   847   909 W Parcel  : Expecting binder but got null!
+12-04 16:37:03.589   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.590   400   517 D AudioFlinger: mixer(0xb400007f64b3a9b0) throttle end: throttle time(35)
+12-04 16:37:03.606   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.622   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.639   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.656   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.672   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.689   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.706   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.723   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.728 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: STOPPED
+12-04 16:37:03.728 10241 10241 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jrutkin.listwiz.MainActivity@3d72538
+12-04 16:37:03.739   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.756   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.772   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.789   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.805   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.806 10241 10241 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view view.getRootView() to equal view
+12-04 16:37:03.815   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f1ed8000 0x1f24dc000]
+12-04 16:37:03.819 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.UserProfileActivity@2cd5b3e in: PAUSED
+12-04 16:37:03.820 10241 10241 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.jrutkin.listwiz/.MainActivity }, activity.getIntent()=Intent { cmp=com.jrutkin.listwiz/.UserProfileActivity }, activity=com.jrutkin.listwiz.UserProfileActivity@2cd5b3e
+12-04 16:37:03.823 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: RESTARTED
+12-04 16:37:03.823 10241 10241 V ActivityScenario: Update currentActivityStage to RESTARTED, currentActivity=com.jrutkin.listwiz.MainActivity@3d72538
+12-04 16:37:03.823 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: STARTED
+12-04 16:37:03.824 10241 10241 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.jrutkin.listwiz.MainActivity@3d72538
+12-04 16:37:03.824 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: RESUMED
+12-04 16:37:03.824 10241 10241 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.jrutkin.listwiz.MainActivity@3d72538
+12-04 16:37:03.825   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.839   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.856   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.862   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f24dc000 0x1f2e44000]
+12-04 16:37:03.863   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f2e44000 0x1f37ac000]
+12-04 16:37:03.864   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f0000000 0x1f0968000]
+12-04 16:37:03.873   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.888   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f3bf0000 0x1f3bf4000]
+12-04 16:37:03.889   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f3bf4000 0x1f3bf8000]
+12-04 16:37:03.889   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.908   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.924   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.924  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3204
+12-04 16:37:03.925  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2100 checkRepeatedly = false, unlocked = true
+12-04 16:37:03.929  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1903 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.jrutkin.listwiz fieldId=-1 fieldName=null extras=null}, false)
+12-04 16:37:03.929  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2100 checkRepeatedly = true, unlocked = true
+12-04 16:37:03.939   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.957   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.974   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:03.990   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.007   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.022   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.039   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.055   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.072   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.089   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.106   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.122   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.139   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.155   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.163   371   371 E android.hardware.audio@7.0-impl.ranchu: device/generic/goldfish/audio/stream_out.cpp:updateSourceMetadata:378 failure: Result::NOT_SUPPORTED
+12-04 16:37:04.173   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.189   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.207   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.222   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.239   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.242 10241 10291 D EGL_emulation: app_time_stats: avg=15.57ms min=1.55ms max=58.90ms count=57
+12-04 16:37:04.256   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.273   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.289   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.307   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.323   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.342   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.357   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.375   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.375 10241 10291 D OpenGLRenderer: endAllActiveAnimators on 0xb4000072b00413d0 (RippleDrawable) with handle 0xb4000071c006f960
+12-04 16:37:04.379 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.UserProfileActivity@2cd5b3e in: STOPPED
+12-04 16:37:04.379 10241 10241 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.jrutkin.listwiz/.MainActivity }, activity.getIntent()=Intent { cmp=com.jrutkin.listwiz/.UserProfileActivity }, activity=com.jrutkin.listwiz.UserProfileActivity@2cd5b3e
+12-04 16:37:04.381 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.UserProfileActivity@2cd5b3e in: DESTROYED
+12-04 16:37:04.381 10241 10241 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.jrutkin.listwiz/.MainActivity }, activity.getIntent()=Intent { cmp=com.jrutkin.listwiz/.UserProfileActivity }, activity=com.jrutkin.listwiz.UserProfileActivity@2cd5b3e
+12-04 16:37:04.382   559  2398 W InputManager-JNI: Input channel object 'b4f42ac com.jrutkin.listwiz/com.jrutkin.listwiz.UserProfileActivity (client)' was disposed without first being removed with the input manager!
+12-04 16:37:04.385  1422  1422 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:2030261070
+12-04 16:37:04.389   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.405   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.494 10241 10241 W KeyEventActionBase: Back was pressed and left the application in an inconsistent state even after 600ms.
+12-04 16:37:04.496 10241 10241 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Bob"}' assertion on view (view.getId() is <2131230742/com.jrutkin.listwiz:id/MainTVUsername> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Bob" and view.getParent() view.getParent() view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+12-04 16:37:04.502 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: PAUSED
+12-04 16:37:04.502 10241 10241 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.jrutkin.listwiz.MainActivity@3d72538
+12-04 16:37:04.504   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.521   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.527 10266 10288 D HostConnection: createUnique: call
+12-04 16:37:04.527 10266 10288 D HostConnection: HostConnection::get() New Host Connection established 0xb40000723002aa90, tid 10288
+12-04 16:37:04.529 10266 10288 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+12-04 16:37:04.530   219   219 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device VINTF manifest.
+12-04 16:37:04.530 10266 10288 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+12-04 16:37:04.531 10266 10288 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+12-04 16:37:04.531 10266 10288 D EGL_emulation: eglCreateContext: 0xb40000723002ae50: maj 3 min 0 rcv 3
+12-04 16:37:04.532 10266 10288 D EGL_emulation: eglMakeCurrent: 0xb40000723002ae50: ver 3 0 (tinfo 0x7450ac4080) (first time)
+12-04 16:37:04.537   219   219 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+12-04 16:37:04.537   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.537 10266 10288 I Gralloc4: mapper 4.x is not supported
+12-04 16:37:04.538 10266 10288 D HostConnection: createUnique: call
+12-04 16:37:04.538 10266 10288 D HostConnection: HostConnection::get() New Host Connection established 0xb40000723002b510, tid 10288
+12-04 16:37:04.538 10266 10288 D goldfish-address-space: allocate: Ask for block of size 0x100
+12-04 16:37:04.538 10266 10288 D goldfish-address-space: allocate: ioctl allocate returned offset 0x1efff8000 size 0x8000
+12-04 16:37:04.539   219   219 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+12-04 16:37:04.540   218   218 I servicemanager: Could not find android.hardware.graphics.allocator.IAllocator/default in the VINTF manifest.
+12-04 16:37:04.540 10266 10288 W Gralloc4: allocator 4.x is not supported
+12-04 16:37:04.541   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f0968000 0x1f12d0000]
+12-04 16:37:04.543 10266 10288 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+12-04 16:37:04.544   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f12d0000 0x1f1c38000]
+12-04 16:37:04.545   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f6f08000 0x1f7870000]
+12-04 16:37:04.556   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.569 10266 10288 W Parcel  : Expecting binder but got null!
+12-04 16:37:04.573   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.582   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f4000000 0x1f4604000]
+12-04 16:37:04.589   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.592   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f4604000 0x1f4f6c000]
+12-04 16:37:04.593   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f4f6c000 0x1f58d4000]
+12-04 16:37:04.594   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f58d4000 0x1f623c000]
+12-04 16:37:04.599 10266 10288 W Parcel  : Expecting binder but got null!
+12-04 16:37:04.602   559  2394 W InputManager-JNI: Input channel object 'bdf2a93 com.jrutkin.listwiz.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+12-04 16:37:04.607   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.613  1098  1290 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=
+12-04 16:37:04.625   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.629  7641  7641 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=66}
+12-04 16:37:04.631  7641  7641 I A       : onApplyWindowInsets: systemWindowInsets=Insets{left=0, top=66, right=0, bottom=66}
+12-04 16:37:04.633   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f0968000 0x1f12d0000]
+12-04 16:37:04.635   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f12d0000 0x1f1c38000]
+12-04 16:37:04.636   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f6f08000 0x1f7870000]
+12-04 16:37:04.638   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1fb2a4000 0x1fbc0c000]
+12-04 16:37:04.640   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f8000000 0x1f8968000]
+12-04 16:37:04.641   383   383 D goldfish-address-space: claimShared: Ask to claim region [0x1f8968000 0x1f92d0000]
+12-04 16:37:04.641   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.664   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.676   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.683  2863  2863 I GsaVoiceInteractionSrv: Handling ACTION_START_HOTWORD
+12-04 16:37:04.683  2863  3103 I GsaVoiceInteractionSrv: disregardVoiceMatch: false
+12-04 16:37:04.683  2863  3103 I GsaVoiceInteractionSrv: Cannot start hotword, hotword has been explicitly disabled.
+12-04 16:37:04.686   559  2399 W InputManager-JNI: Input channel object 'cb130a6 com.jrutkin.listwiz.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity (client)' was disposed without first being removed with the input manager!
+12-04 16:37:04.687  7641  7641 W A       : Can't get WAA status for Mavatar!
+12-04 16:37:04.687  7641  7641 W A       : java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Class java.lang.Object.getClass()' on a null object reference
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.apps.tiktok.dataservice.z.b(PG:1)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.apps.tiktok.dataservice.at.a(PG:1)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.apps.tiktok.tracing.ec.a(PG:2)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.common.util.concurrent.aj.a(PG:2)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.common.util.concurrent.ac.apply(PG:1)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.common.util.concurrent.h.e(PG:2)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.common.util.concurrent.j.run(PG:9)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.common.util.concurrent.bf.execute(PG:1)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.common.util.concurrent.d.i(PG:1)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.common.util.concurrent.d.l(PG:12)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.common.util.concurrent.d.n(PG:2)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.common.util.concurrent.i.f(PG:1)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.common.util.concurrent.j.run(PG:12)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.android.libraries.i.ae.run(PG:1)
+12-04 16:37:04.687  7641  7641 W A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+12-04 16:37:04.687  7641  7641 W A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.android.libraries.i.l.run(PG:2)
+12-04 16:37:04.687  7641  7641 W A       : 	at com.google.android.libraries.i.q.run(PG:4)
+12-04 16:37:04.687  7641  7641 W A       : 	at java.lang.Thread.run(Thread.java:1012)
+12-04 16:37:04.688   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.699   847   909 D EGL_emulation: app_time_stats: avg=188.28ms min=7.02ms max=1558.58ms count=9
+12-04 16:37:04.708   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.725   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.725  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3204
+12-04 16:37:04.726  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2100 checkRepeatedly = false, unlocked = true
+12-04 16:37:04.726  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1903 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null}, false)
+12-04 16:37:04.727  8163  8163 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2100 checkRepeatedly = true, unlocked = true
+12-04 16:37:04.740   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.756   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.773   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.789   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.806   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.809   847   909 D EGL_emulation: app_time_stats: avg=168.72ms min=10.86ms max=1221.48ms count=8
+12-04 16:37:04.823   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.840   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.856   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.873   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.890   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.907   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.922   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.939   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.957   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.973   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:04.989   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.006   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.023   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.039   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.056   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.074   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.089   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.106   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.123   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.139   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.156   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.173   384   524 W RanchuHwc: presentDisplay display has no layers to compose, flushing client target buffer.
+12-04 16:37:05.176 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: STOPPED
+12-04 16:37:05.176 10241 10241 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.jrutkin.listwiz.MainActivity@3d72538
+12-04 16:37:05.177 10241 10241 D LifecycleMonitor: Lifecycle status change: com.jrutkin.listwiz.MainActivity@3d72538 in: DESTROYED
+12-04 16:37:05.177 10241 10241 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+12-04 16:37:05.177 10241 10264 I TestRunner: finished: mainActivityUsernameTest(com.jrutkin.listwiz.MainActivityUsernameTest)
