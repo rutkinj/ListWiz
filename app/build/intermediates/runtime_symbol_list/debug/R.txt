@@ -2570,10 +2570,8 @@ int id FirstFragment 0x7f08000e
 int id META 0x7f08000f
 int id MainButtonAddTask 0x7f080010
 int id MainButtonAllTasks 0x7f080011
-int id MainButtonTaskGym 0x7f080012
-int id MainButtonTaskLaundry 0x7f080013
-int id MainButtonTaskTan 0x7f080014
 int id MainIVToUserProfile 0x7f080015
+int id MainRV 0x7f0801fc
 int id MainTVUsername 0x7f080016
 int id NO_DEBUG 0x7f080017
 int id SHIFT 0x7f080018
@@ -2584,6 +2582,9 @@ int id SYM 0x7f08001c
 int id SecondFragment 0x7f08001d
 int id TOP_END 0x7f08001e
 int id TOP_START 0x7f08001f
+int id TaskFragTVTaskDesc 0x7f0801ff
+int id TaskFragTVTaskName 0x7f080200
+int id TaskFragment 0x7f0801fd
 int id UserProfileETUsername 0x7f080020
 int id UserProfileSubmitButton 0x7f080021
 int id accelerate 0x7f080022
@@ -2767,6 +2768,7 @@ int id flip 0x7f0800d3
 int id floating 0x7f0800d4
 int id forever 0x7f0800d5
 int id fragment_container_view_tag 0x7f0800d6
+int id frameLayout 0x7f0801fe
 int id frost 0x7f0800d7
 int id ghost_view 0x7f0800d8
 int id ghost_view_holder 0x7f0800d9
@@ -3167,6 +3169,7 @@ int layout design_navigation_menu 0x7f0b002d
 int layout design_navigation_menu_item 0x7f0b002e
 int layout design_text_input_end_icon 0x7f0b002f
 int layout design_text_input_start_icon 0x7f0b0030
+int layout fragment_task 0x7f0b0078
 int layout m3_alert_dialog 0x7f0b0031
 int layout m3_alert_dialog_actions 0x7f0b0032
 int layout m3_alert_dialog_title 0x7f0b0033
@@ -3286,6 +3289,7 @@ int string exposed_dropdown_menu_content_description 0x7f100026
 int string fab_transformation_scrim_behavior 0x7f100027
 int string fab_transformation_sheet_behavior 0x7f100028
 int string first_fragment_label 0x7f100029
+int string hello_blank_fragment 0x7f10008d
 int string hello_first_fragment 0x7f10002a
 int string hello_second_fragment 0x7f10002b
 int string hide_bottom_view_on_scroll_behavior 0x7f10002c

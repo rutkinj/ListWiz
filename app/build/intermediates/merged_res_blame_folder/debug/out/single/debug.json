@@ -16,10 +16,6 @@
         "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-34:/layout/activity_all_tasks.xml"
     },
     {
-        "merged": "com.jrutkin.listwiz.app-merged_res-32:/layout_activity_task_detail.xml.flat",
-        "source": "com.jrutkin.listwiz.app-main-34:/layout/activity_task_detail.xml"
-    },
-    {
         "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-merged_res-32:/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-34:/drawable/ic_launcher_background.xml"
     },
@@ -50,6 +46,10 @@
     {
         "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-merged_res-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-merged_res-32:/layout_fragment_task.xml.flat",
+        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-34:/layout/fragment_task.xml"
     },
     {
         "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-merged_res-32:/mipmap-xhdpi_ic_launcher.webp.flat",

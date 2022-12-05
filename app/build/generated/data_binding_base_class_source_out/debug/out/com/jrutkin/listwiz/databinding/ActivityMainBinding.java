@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.jrutkin.listwiz.R;
@@ -28,31 +29,22 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button MainButtonAllTasks;
 
   @NonNull
-  public final Button MainButtonTaskGym;
-
-  @NonNull
-  public final Button MainButtonTaskLaundry;
-
-  @NonNull
-  public final Button MainButtonTaskTan;
-
-  @NonNull
   public final ImageView MainIVToUserProfile;
+
+  @NonNull
+  public final RecyclerView MainRV;
 
   @NonNull
   public final TextView MainTVUsername;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button MainButtonAddTask,
-      @NonNull Button MainButtonAllTasks, @NonNull Button MainButtonTaskGym,
-      @NonNull Button MainButtonTaskLaundry, @NonNull Button MainButtonTaskTan,
-      @NonNull ImageView MainIVToUserProfile, @NonNull TextView MainTVUsername) {
+      @NonNull Button MainButtonAllTasks, @NonNull ImageView MainIVToUserProfile,
+      @NonNull RecyclerView MainRV, @NonNull TextView MainTVUsername) {
     this.rootView = rootView;
     this.MainButtonAddTask = MainButtonAddTask;
     this.MainButtonAllTasks = MainButtonAllTasks;
-    this.MainButtonTaskGym = MainButtonTaskGym;
-    this.MainButtonTaskLaundry = MainButtonTaskLaundry;
-    this.MainButtonTaskTan = MainButtonTaskTan;
     this.MainIVToUserProfile = MainIVToUserProfile;
+    this.MainRV = MainRV;
     this.MainTVUsername = MainTVUsername;
   }
 
@@ -95,27 +87,15 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.MainButtonTaskGym;
-      Button MainButtonTaskGym = ViewBindings.findChildViewById(rootView, id);
-      if (MainButtonTaskGym == null) {
-        break missingId;
-      }
-
-      id = R.id.MainButtonTaskLaundry;
-      Button MainButtonTaskLaundry = ViewBindings.findChildViewById(rootView, id);
-      if (MainButtonTaskLaundry == null) {
-        break missingId;
-      }
-
-      id = R.id.MainButtonTaskTan;
-      Button MainButtonTaskTan = ViewBindings.findChildViewById(rootView, id);
-      if (MainButtonTaskTan == null) {
-        break missingId;
-      }
-
       id = R.id.MainIVToUserProfile;
       ImageView MainIVToUserProfile = ViewBindings.findChildViewById(rootView, id);
       if (MainIVToUserProfile == null) {
+        break missingId;
+      }
+
+      id = R.id.MainRV;
+      RecyclerView MainRV = ViewBindings.findChildViewById(rootView, id);
+      if (MainRV == null) {
         break missingId;
       }
 
@@ -126,8 +106,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, MainButtonAddTask,
-          MainButtonAllTasks, MainButtonTaskGym, MainButtonTaskLaundry, MainButtonTaskTan,
-          MainIVToUserProfile, MainTVUsername);
+          MainButtonAllTasks, MainIVToUserProfile, MainRV, MainTVUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

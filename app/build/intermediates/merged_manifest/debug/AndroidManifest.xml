@@ -19,37 +19,38 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/Theme.ListWiz" >
         <activity
-            android:name="com.jrutkin.listwiz.TaskDetailActivity"
+            android:name="com.jrutkin.listwiz.activities.TaskDetailActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.jrutkin.listwiz.UserProfileActivity"
+            android:name="com.jrutkin.listwiz.activities.UserProfileActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.jrutkin.listwiz.AllTasks"
+            android:name="com.jrutkin.listwiz.activities.AllTasksActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.jrutkin.listwiz.AddTask"
+            android:name="com.jrutkin.listwiz.activities.AddTaskActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.jrutkin.listwiz.MainActivity"
+            android:name="com.jrutkin.listwiz.activities.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
