@@ -10,6 +10,7 @@ import kotlinx.coroutines.scheduling.Task;
 @Entity
 public class TaskModel {
     @PrimaryKey(autoGenerate = true)
+    Long id;
     private String taskName;
     private String taskDesc;
     private Date createdDate;
@@ -22,7 +23,7 @@ public class TaskModel {
         this.taskStatus = taskStatus;
         this.createdDate = createdDate;
     }
-    
+
     public TaskModel(){}
 
     public String getTaskName() {
