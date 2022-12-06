@@ -21,6 +21,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+
     public static final String TASK_DESC_TAG = "taskDesc";
 
     public static final String TASK_NAME_TAG = "taskName";
@@ -38,14 +39,14 @@ public class MainActivity extends AppCompatActivity {
 
         // dummy list of tasks
         List<TaskModel> taskList = new ArrayList<>();
-        taskList.add(new TaskModel("Gym","As in -> Hit that"));
-        taskList.add(new TaskModel("Tan","As in -> Get that"));
-        taskList.add(new TaskModel("Laundry","I wash that"));
-        taskList.add(new TaskModel("Sharpen Pencils","Gettin' dull"));
-        taskList.add(new TaskModel("Take a rest","Gettin' tired"));
-        taskList.add(new TaskModel("Blink eyes","Gotta get my 10,000 daily blinks"));
-        taskList.add(new TaskModel("Be Normal","The humans must not know"));
-        taskList.add(new TaskModel("Stretch","Taffy"));
+//        taskList.add(new TaskModel("Gym","As in -> Hit that"));
+//        taskList.add(new TaskModel("Tan","As in -> Get that"));
+//        taskList.add(new TaskModel("Laundry","I wash that"));
+//        taskList.add(new TaskModel("Sharpen Pencils","Gettin' dull"));
+//        taskList.add(new TaskModel("Take a rest","Gettin' tired"));
+//        taskList.add(new TaskModel("Blink eyes","Gotta get my 10,000 daily blinks"));
+//        taskList.add(new TaskModel("Be Normal","The humans must not know"));
+//        taskList.add(new TaskModel("Stretch","Taffy"));
 
         // setup recycler view
         RecyclerView taskRV = findViewById(R.id.MainRV);
