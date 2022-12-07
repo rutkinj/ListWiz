@@ -45,11 +45,16 @@ public class TaskRecyclerViewAdapter extends RecyclerView.Adapter<TaskRecyclerVi
         String taskDesc = taskList.get(position).getTaskDesc();
         taskFragTVTaskDesc.setText(taskDesc);
 
+        TextView taskFragTVTaskStatus = holder.itemView.findViewById(R.id.TaskFragTVTaskDesc);
+        String taskStatus = taskList.get(position).getTaskStatus().toString();
+        taskFragTVTaskDesc.setText(taskDesc);
+
         View taskItemView = holder.itemView;
         taskItemView.setOnClickListener(v -> {
             Intent goToTaskDetail = new Intent(callingActivity, TaskDetailActivity.class);
             goToTaskDetail.putExtra(MainActivity.TASK_NAME_TAG, taskName);
             goToTaskDetail.putExtra(MainActivity.TASK_DESC_TAG, taskDesc);
+            goToTaskDetail.putExtra(MainActivity.TASK_STATUS_TAG, taskStatus);
             callingActivity.startActivity(goToTaskDetail);
         });
     }

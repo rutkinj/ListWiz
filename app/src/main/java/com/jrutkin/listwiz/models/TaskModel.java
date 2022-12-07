@@ -1,5 +1,6 @@
 package com.jrutkin.listwiz.models;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -10,21 +11,25 @@ import kotlinx.coroutines.scheduling.Task;
 @Entity
 public class TaskModel {
     @PrimaryKey(autoGenerate = true)
-    Long id;
+    public Long id;
     private String taskName;
     private String taskDesc;
-    private Date createdDate;
+//    private Date createdDate;
 
     private TaskStatusEnum taskStatus;
 
-    public TaskModel(String taskName, String taskDesc, TaskStatusEnum taskStatus, Date createdDate) {
+    public TaskModel(String taskName, String taskDesc, TaskStatusEnum taskStatus/*, Date createdDate*/) {
         this.taskName = taskName;
         this.taskDesc = taskDesc;
         this.taskStatus = taskStatus;
-        this.createdDate = createdDate;
+//        this.createdDate = createdDate;
     }
 
     public TaskModel(){}
+
+    public Long getId() {
+        return id;
+    }
 
     public String getTaskName() {
         return taskName;
@@ -40,6 +45,14 @@ public class TaskModel {
 
     public void setTaskDesc(String taskDesc) {
         this.taskDesc = taskDesc;
+    }
+
+    public TaskStatusEnum getTaskStatus() {
+        return taskStatus;
+    }
+
+    public void setTaskStatus(TaskStatusEnum taskStatus) {
+        this.taskStatus = taskStatus;
     }
 
     // ENUM
@@ -68,12 +81,13 @@ public class TaskModel {
             return null;
         }
 
-//        @Override
-//        String toString(){
-//            if (taskStatus == null){
-//                return "";
-//            }
-//            return taskStatus;
-//        }
+        @NonNull
+        @Override
+        public String toString(){
+            if (taskStatus == null){
+                return "";
+            }
+            return taskStatus;
+        }
     }
 }

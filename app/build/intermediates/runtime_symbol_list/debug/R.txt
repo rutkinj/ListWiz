@@ -2559,12 +2559,14 @@ int id AddETTaskTitle 0x7f080003
 int id AddTVTaskDescHeader 0x7f080004
 int id AddTVTaskTitleHeader 0x7f080005
 int id AddTVTitle 0x7f080006
+int id AddTaskSpinner 0x7f0801fe
 int id AllTVTitle 0x7f080007
 int id BOTTOM_END 0x7f080008
 int id BOTTOM_START 0x7f080009
 int id CTRL 0x7f08000a
 int id DetailTVTaskDesc 0x7f08000b
 int id DetailTVTaskName 0x7f08000c
+int id DetailTVTaskStatus 0x7f0801ff
 int id FUNCTION 0x7f08000d
 int id FirstFragment 0x7f08000e
 int id META 0x7f08000f

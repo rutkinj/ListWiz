@@ -25,11 +25,16 @@ public final class ActivityTaskDetailBinding implements ViewBinding {
   @NonNull
   public final TextView DetailTVTaskName;
 
+  @NonNull
+  public final TextView DetailTVTaskStatus;
+
   private ActivityTaskDetailBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView DetailTVTaskDesc, @NonNull TextView DetailTVTaskName) {
+      @NonNull TextView DetailTVTaskDesc, @NonNull TextView DetailTVTaskName,
+      @NonNull TextView DetailTVTaskStatus) {
     this.rootView = rootView;
     this.DetailTVTaskDesc = DetailTVTaskDesc;
     this.DetailTVTaskName = DetailTVTaskName;
+    this.DetailTVTaskStatus = DetailTVTaskStatus;
   }
 
   @Override
@@ -71,8 +76,14 @@ public final class ActivityTaskDetailBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.DetailTVTaskStatus;
+      TextView DetailTVTaskStatus = ViewBindings.findChildViewById(rootView, id);
+      if (DetailTVTaskStatus == null) {
+        break missingId;
+      }
+
       return new ActivityTaskDetailBinding((ConstraintLayout) rootView, DetailTVTaskDesc,
-          DetailTVTaskName);
+          DetailTVTaskName, DetailTVTaskStatus);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
