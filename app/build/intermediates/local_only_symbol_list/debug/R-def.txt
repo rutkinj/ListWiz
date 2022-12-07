@@ -16,9 +16,11 @@ id AddETTaskTitle
 id AddTVTaskDescHeader
 id AddTVTaskTitleHeader
 id AddTVTitle
+id AddTaskSpinner
 id AllTVTitle
 id DetailTVTaskDesc
 id DetailTVTaskName
+id DetailTVTaskStatus
 id FirstFragment
 id MainButtonAddTask
 id MainButtonAllTasks

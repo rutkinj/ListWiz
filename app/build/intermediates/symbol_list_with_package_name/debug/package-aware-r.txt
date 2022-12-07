@@ -2560,12 +2560,14 @@ id AddETTaskTitle
 id AddTVTaskDescHeader
 id AddTVTaskTitleHeader
 id AddTVTitle
+id AddTaskSpinner
 id AllTVTitle
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id DetailTVTaskDesc
 id DetailTVTaskName
+id DetailTVTaskStatus
 id FUNCTION
 id FirstFragment
 id META

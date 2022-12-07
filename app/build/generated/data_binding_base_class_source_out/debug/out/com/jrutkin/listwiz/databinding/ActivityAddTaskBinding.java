@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -39,10 +40,13 @@ public final class ActivityAddTaskBinding implements ViewBinding {
   @NonNull
   public final TextView AddTVTitle;
 
+  @NonNull
+  public final Spinner AddTaskSpinner;
+
   private ActivityAddTaskBinding(@NonNull ConstraintLayout rootView, @NonNull Button AddButton,
       @NonNull EditText AddETTaskDesc, @NonNull EditText AddETTaskTitle,
       @NonNull TextView AddTVTaskDescHeader, @NonNull TextView AddTVTaskTitleHeader,
-      @NonNull TextView AddTVTitle) {
+      @NonNull TextView AddTVTitle, @NonNull Spinner AddTaskSpinner) {
     this.rootView = rootView;
     this.AddButton = AddButton;
     this.AddETTaskDesc = AddETTaskDesc;
@@ -50,6 +54,7 @@ public final class ActivityAddTaskBinding implements ViewBinding {
     this.AddTVTaskDescHeader = AddTVTaskDescHeader;
     this.AddTVTaskTitleHeader = AddTVTaskTitleHeader;
     this.AddTVTitle = AddTVTitle;
+    this.AddTaskSpinner = AddTaskSpinner;
   }
 
   @Override
@@ -115,8 +120,14 @@ public final class ActivityAddTaskBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.AddTaskSpinner;
+      Spinner AddTaskSpinner = ViewBindings.findChildViewById(rootView, id);
+      if (AddTaskSpinner == null) {
+        break missingId;
+      }
+
       return new ActivityAddTaskBinding((ConstraintLayout) rootView, AddButton, AddETTaskDesc,
-          AddETTaskTitle, AddTVTaskDescHeader, AddTVTaskTitleHeader, AddTVTitle);
+          AddETTaskTitle, AddTVTaskDescHeader, AddTVTaskTitleHeader, AddTVTitle, AddTaskSpinner);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

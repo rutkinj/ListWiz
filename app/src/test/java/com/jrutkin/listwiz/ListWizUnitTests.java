@@ -8,8 +8,8 @@ import org.junit.Test;
 
 public class ListWizUnitTests {
 
-    @Test public void createTask(){
-        TaskModel sut = new TaskModel("Change Hairdo", "Beehive");
-        assertEquals("Change Hairdo", sut.getTaskName());
-    }
+//    @Test public void createTask(){
+//        TaskModel sut = new TaskModel("Change Hairdo", "Beehive");
+//        assertEquals("Change Hairdo", sut.getTaskName());
+//    }
 }
