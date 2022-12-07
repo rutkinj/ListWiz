@@ -1,19 +1,22 @@
 # ListWiz
 
-Someday this will be a todo list app. For now it is a barebones app with a recycle view list of hardcoded tasks that hold no information and the ability to set a username.
+ListWiz is a ToDo list app! A user can set their username and create tasks that will appear on their homepage.
 
 ## Features
 
-- Scroll through hardcoded tasks
+- Scroll through tasks
 - Save your username
-- Navigate to placeholder pages
+- Save Tasks to local database
+- Create new tasks
+- Set task status
+- View task details
 - View toasts
 
 ## Screenshots
 
 ![nah](/app/screenshots/main.png)
 
-![nah](/app/screenshots/add.png)
+![nah](/app/screenshots/add12_6.png)
 
 ![nah](/app/screenshots/all.png)
 
@@ -26,3 +29,4 @@ Someday this will be a todo list app. For now it is a barebones app with a recyc
 - 12/1 -> Adds three initial pages and links them together
 - 12/4 -> Adds username saving and task details page
 - 12/5 -> Replaces hardcoded buttons on main with hardcoded recycler view
+- 12/6 -> Local database integration, set task status
