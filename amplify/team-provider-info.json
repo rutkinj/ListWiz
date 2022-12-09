@@ -10,6 +10,11 @@
       "StackName": "amplify-listwiz-dev-174755",
       "StackId": "arn:aws:cloudformation:us-west-2:393006162309:stack/amplify-listwiz-dev-174755/80f4d4f0-7763-11ed-81a5-06a878106a9f",
       "AmplifyAppId": "d237zwbr994c49"
+    },
+    "categories": {
+      "api": {
+        "listwiz": {}
+      }
     }
   }
 }

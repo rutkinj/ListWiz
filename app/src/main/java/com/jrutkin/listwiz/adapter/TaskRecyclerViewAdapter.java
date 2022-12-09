@@ -10,19 +10,18 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.amplifyframework.datastore.generated.model.Task;
 import com.jrutkin.listwiz.R;
 import com.jrutkin.listwiz.activities.MainActivity;
 import com.jrutkin.listwiz.activities.TaskDetailActivity;
-import com.jrutkin.listwiz.models.TaskModel;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class TaskRecyclerViewAdapter extends RecyclerView.Adapter<TaskRecyclerViewAdapter.TaskViewHolder> {
-    List<TaskModel> taskList;
+    List<Task> taskList;
     Context callingActivity;
 
-    public TaskRecyclerViewAdapter(List<TaskModel> taskList, Context callingActivity) {
+    public TaskRecyclerViewAdapter(List<Task> taskList, Context callingActivity) {
         this.taskList = taskList;
         this.callingActivity = callingActivity;
     }
@@ -38,15 +37,15 @@ public class TaskRecyclerViewAdapter extends RecyclerView.Adapter<TaskRecyclerVi
     public void onBindViewHolder(@NonNull TaskViewHolder holder, int position) {
 
         TextView taskFragTVTaskName = holder.itemView.findViewById(R.id.TaskFragTVTaskName);
-        String taskName = taskList.get(position).getTaskName() + ": ";
+        String taskName = taskList.get(position).getName() + ": ";
         taskFragTVTaskName.setText(taskName);
 
         TextView taskFragTVTaskDesc = holder.itemView.findViewById(R.id.TaskFragTVTaskDesc);
-        String taskDesc = taskList.get(position).getTaskDesc();
+        String taskDesc = taskList.get(position).getDescription();
         taskFragTVTaskDesc.setText(taskDesc);
 
 //        TextView taskFragTVTaskStatus = holder.itemView.findViewById(R.id.Tas);
-        String taskStatus = taskList.get(position).getTaskStatus().toString();
+        String taskStatus = taskList.get(position).getStatus().toString();
 //        taskFragTVTaskStatus.setText(taskStatus);
 
         View taskItemView = holder.itemView;

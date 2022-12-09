@@ -3,17 +3,21 @@ package com.jrutkin.listwiz.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.amplifyframework.api.graphql.model.ModelMutation;
+import com.amplifyframework.core.Amplify;
+import com.amplifyframework.datastore.generated.model.StatusEnum;
+import com.amplifyframework.datastore.generated.model.Task;
 import com.jrutkin.listwiz.R;
-import com.jrutkin.listwiz.models.TaskModel;
 
 public class AddTaskActivity extends AppCompatActivity {
-
+    public static final String TAG = "AddTaskActivity";
 
     Spinner statusSpinner;
 
@@ -31,12 +35,17 @@ public class AddTaskActivity extends AppCompatActivity {
         Button addTaskButton = AddTaskActivity.this.findViewById(R.id.AddButton);
         addTaskButton.setOnClickListener(view -> {
             // GET INFO
-            TaskModel newTask = new TaskModel(
-                    ((EditText)findViewById(R.id.AddETTaskTitle)).getText().toString(),
-                    ((EditText)findViewById(R.id.AddETTaskDesc)).getText().toString(),
-                    TaskModel.TaskStatusEnum.fromString(statusSpinner.getSelectedItem().toString())
-            );
+            Task newTask = Task.builder()
+                    .name(((EditText)findViewById(R.id.AddETTaskTitle)).getText().toString())
+                    .description(((EditText)findViewById(R.id.AddETTaskDesc)).getText().toString())
+                    .status((StatusEnum) statusSpinner.getSelectedItem())
+                    .build();
             // ADD TO DB
+            Amplify.API.mutate(
+                    ModelMutation.create(newTask),
+                    success -> Log.i(TAG, "AddTaskActivity.onCreate(): successfully created task."),
+                    failure -> Log.w(TAG, "AddTaskActivity.onCreate(): failed to create task.", failure)
+            );
             // TOAST
             Toast.makeText(this, "Task Submitted", Toast.LENGTH_SHORT).show();
         });
@@ -48,7 +57,7 @@ public class AddTaskActivity extends AppCompatActivity {
         statusSpinner.setAdapter(new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_spinner_item,
-                TaskModel.TaskStatusEnum.values()
+                StatusEnum.values()
         ));
     }
 }
