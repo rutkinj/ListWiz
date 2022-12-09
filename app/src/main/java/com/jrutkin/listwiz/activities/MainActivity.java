@@ -3,48 +3,59 @@ package com.jrutkin.listwiz.activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.room.Room;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.amplifyframework.api.graphql.model.ModelQuery;
+import com.amplifyframework.core.Amplify;
+import com.amplifyframework.datastore.generated.model.Task;
 import com.jrutkin.listwiz.R;
 import com.jrutkin.listwiz.adapter.TaskRecyclerViewAdapter;
-import com.jrutkin.listwiz.database.WizDatabase;
-import com.jrutkin.listwiz.models.TaskModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    WizDatabase wizDatabase;
-
-    public static final String DB_NAME = "wizDatabase";
+    public static final String TAG = "MainActivity";
     public static final String TASK_DESC_TAG = "taskDesc";
     public static final String TASK_NAME_TAG = "taskName";
     public static final String TASK_STATUS_TAG = "taskStatus";
+
+    private List<Task> taskList;
+    private TaskRecyclerViewAdapter adapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        wizDatabase = Room.databaseBuilder(getApplicationContext(), WizDatabase.class, DB_NAME)
-                .fallbackToDestructiveMigration()
-                .allowMainThreadQueries()
-                .build();
-
+        taskList = new ArrayList<>();
         buttonSetup();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+
+        Amplify.API.query(
+                ModelQuery.list(Task.class),
+                success -> {
+                    Log.i(TAG, "MainActivity.OnResume(): Successfully got tasks");
+                    for(Task task:success.getData()){
+                        taskList.add(task);
+                    }
+                    runOnUiThread(() -> adapter.notifyDataSetChanged());
+                },
+                failure -> Log.i(TAG, "MainActivity.OnResume(): Failed to get tasks")
+        );
 
         greetingSetup();
         recyclerViewSetup();
@@ -79,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void recyclerViewSetup() {
 
-        List<TaskModel> taskList = wizDatabase.taskDao().findAll();
         // dummy list of tasks
 //        taskList.add(new TaskModel("Gym","As in -> Hit that"));
 //        taskList.add(new TaskModel("Tan","As in -> Get that"));
@@ -94,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView taskRV = findViewById(R.id.MainRV);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         taskRV.setLayoutManager(layoutManager);
-        TaskRecyclerViewAdapter adapter = new TaskRecyclerViewAdapter(taskList, this);
+        adapter = new TaskRecyclerViewAdapter(taskList, this);
         taskRV.setAdapter(adapter);
     }
 

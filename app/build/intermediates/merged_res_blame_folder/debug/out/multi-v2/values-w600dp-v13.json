@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jrutkin.listwiz.app-mergeDebugResources-33:/values-w600dp-v13/values-w600dp-v13.xml",
+            "outputFile": "com.jrutkin.listwiz.app-mergeDebugResources-38:/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/res/values-w600dp/dimens.xml",
