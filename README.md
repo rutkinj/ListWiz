@@ -6,7 +6,7 @@ ListWiz is a ToDo list app! A user can set their username and create tasks that 
 
 - Scroll through tasks
 - Save your username
-- Save Tasks to local database
+- Save Tasks to DynamoDB
 - Create new tasks
 - Set task status
 - View task details
@@ -30,3 +30,4 @@ ListWiz is a ToDo list app! A user can set their username and create tasks that 
 - 12/4 -> Adds username saving and task details page
 - 12/5 -> Replaces hardcoded buttons on main with hardcoded recycler view
 - 12/6 -> Local database integration, set task status
+- 12/8 -> Removes local databse integration, adds aws amplify integration
