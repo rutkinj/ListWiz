@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">%d notificación nova</item>
     <item quantity="other">%d notificacións novas</item>
@@ -35,9 +35,16 @@
     <string name="character_counter_content_description">Introducíronse %1$d caracteres de %2$d</string>
     <string name="character_counter_overflowed_content_description">Introducíronse %1$d caracteres, pero o límite é de %2$d</string>
     <string name="clear_text_end_icon_content_description">Borra texto</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Copiouse a ligazón no portapapeis"</string>
     <string name="error_icon_content_description">Produciuse un erro</string>
     <string name="exposed_dropdown_menu_content_description">Mostra o menú despregable</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiar ligazón"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Abrir no navegador"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Compartir ligazón"</string>
     <string name="icon_content_description">Icona de cadro de diálogo</string>
+    <string msgid="475402237100444685" name="installation_cancelled">"Cancelouse a instalación."</string>
+    <string msgid="863287960437940689" name="installation_failed">"Produciuse un erro na instalación."</string>
+    <string msgid="5968445461040787716" name="installing_module">"Instalando módulo:"</string>
     <string name="item_view_role_description">Pestana</string>
     <string name="material_clock_toggle_content_description">Seleccionar a.m. ou p.m.</string>
     <string name="material_hour_selection">Seleccionar hora</string>
@@ -53,11 +60,12 @@
     <string name="material_timepicker_text_input_mode_description">Cambia ao modo de introdución de texto para introducir a hora.</string>
     <string name="mtrl_badge_numberless_content_description">Notificación nova</string>
     <string name="mtrl_chip_close_icon_content_description">Quita %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description">Máis de %1$d notificacións novas</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Máis de %1$d notificacións novas</string>
     <string name="mtrl_picker_a11y_next_month">Cambiar ao mes seguinte</string>
     <string name="mtrl_picker_a11y_prev_month">Cambiar ao mes anterior</string>
     <string name="mtrl_picker_announce_current_selection">Selección actual: %1$s</string>
-    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_cancel">Cancelar</string>
+    <string name="mtrl_picker_confirm">Aceptar</string>
     <string name="mtrl_picker_date_header_selected">%1$s</string>
     <string name="mtrl_picker_date_header_title">Selecciona unha data</string>
     <string name="mtrl_picker_date_header_unselected">Data seleccionada</string>
@@ -84,9 +92,14 @@
     <string name="mtrl_picker_toggle_to_day_selection">Tocar para cambiar a selección de día</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Cambiar ao modo de introdución de texto</string>
     <string name="mtrl_picker_toggle_to_year_selection">Tocar para cambiar a selección de ano</string>
+    <string name="mtrl_timepicker_cancel">Cancelar</string>
+    <string name="mtrl_timepicker_confirm">Aceptar</string>
     <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Desprazarse cara arriba"</string>
     <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Abrir o panel de navegación"</string>
+    <string msgid="4702104660890557116" name="ok">"Aceptar"</string>
     <string name="password_toggle_content_description">Mostra o contrasinal</string>
+    <string msgid="8366783942222789124" name="progress">"Progreso:"</string>
+    <string msgid="1065327189183624288" name="retry">"Tentar de novo"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Buscar"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">">999"</string>
 </resources>

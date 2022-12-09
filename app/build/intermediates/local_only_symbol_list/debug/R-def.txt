@@ -47,6 +47,8 @@ layout fragment_task
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
+raw amplifyconfiguration
+raw awsconfiguration
 string app_name
 string first_fragment_label
 string hello_blank_fragment

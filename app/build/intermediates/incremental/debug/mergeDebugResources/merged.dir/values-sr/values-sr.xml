@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">%d ново обавештење</item>
     <item quantity="few">%d нова обавештења</item>
@@ -36,9 +36,16 @@
     <string name="character_counter_content_description">Унети знакови: %1$d од %2$d</string>
     <string name="character_counter_overflowed_content_description">Прекорачено је ограничење броја знакова: %1$d од %2$d</string>
     <string name="clear_text_end_icon_content_description">Обриши текст</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Линк је копиран у привремену меморију"</string>
     <string name="error_icon_content_description">Грешка</string>
     <string name="exposed_dropdown_menu_content_description">Прикажи падајући мени</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Копирај линк"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Отвори у прегледачу"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Дели линк"</string>
     <string name="icon_content_description">Икона дијалога</string>
+    <string msgid="475402237100444685" name="installation_cancelled">"Инсталација је отказана."</string>
+    <string msgid="863287960437940689" name="installation_failed">"Инсталација није успела."</string>
+    <string msgid="5968445461040787716" name="installing_module">"Модул инсталирања:"</string>
     <string name="item_view_role_description">Картица</string>
     <string name="material_clock_toggle_content_description">Изаберите пре подне или по подне</string>
     <string name="material_hour_selection">Изаберите сат</string>
@@ -54,11 +61,12 @@
     <string name="material_timepicker_text_input_mode_description">Пређите у режим уноса текста ради уноса времена.</string>
     <string name="mtrl_badge_numberless_content_description">Ново обавештење</string>
     <string name="mtrl_chip_close_icon_content_description">Уклоните %1$s</string>
-    <string name="mtrl_exceed_max_badge_number_content_description">Нових обавештења: више од %1$d</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Нових обавештења: више од %1$d</string>
     <string name="mtrl_picker_a11y_next_month">Пређите на следећи месец</string>
     <string name="mtrl_picker_a11y_prev_month">Пређите на претходни месец</string>
     <string name="mtrl_picker_announce_current_selection">Актуелни избор: %1$s</string>
-    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_cancel">Откажи</string>
+    <string name="mtrl_picker_confirm">Потврди</string>
     <string name="mtrl_picker_date_header_selected">%1$s</string>
     <string name="mtrl_picker_date_header_title">Изаберите датум</string>
     <string name="mtrl_picker_date_header_unselected">Изабрани датум</string>
@@ -85,9 +93,14 @@
     <string name="mtrl_picker_toggle_to_day_selection">Додирните да бисте прешли на избор дана</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">Пређите на режим уноса текста</string>
     <string name="mtrl_picker_toggle_to_year_selection">Додирните да бисте прешли на избор године</string>
+    <string name="mtrl_timepicker_cancel">Откажи</string>
+    <string name="mtrl_timepicker_confirm">Потврди</string>
     <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Идите нагоре"</string>
     <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Отворите фиоку за навигацију"</string>
+    <string msgid="4702104660890557116" name="ok">"Потврди"</string>
     <string name="password_toggle_content_description">Прикажи лозинку</string>
+    <string msgid="8366783942222789124" name="progress">"Напредак:"</string>
+    <string msgid="1065327189183624288" name="retry">"Пробај поново"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"Претражите"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

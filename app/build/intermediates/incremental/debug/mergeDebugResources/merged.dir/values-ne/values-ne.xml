@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <plurals name="mtrl_badge_content_description">
     <item quantity="one">%d नयाँ सूचना</item>
     <item quantity="other">%d नयाँ सूचनाहरू</item>
@@ -35,9 +35,16 @@
     <string name="character_counter_content_description">%2$d मध्ये %1$d वर्ण प्रविष्ट गरियो</string>
     <string name="character_counter_overflowed_content_description">%2$d मध्ये %1$d वर्ण सीमा नाघ्यो</string>
     <string name="clear_text_end_icon_content_description">पाठ खाली गर्नुहोस्</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"क्लिपबोर्डमा लिंक प्रतिलिपि गरियो"</string>
     <string name="error_icon_content_description">त्रुटि</string>
     <string name="exposed_dropdown_menu_content_description">ड्रपडाउन मेनु देखाउनुहोस्</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"लिंक प्रतिलिपि गर्नुहोस्"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"ब्राउजरमा खोल्नुहोस्"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"लिंक सेयर गर्नुहोस्"</string>
     <string name="icon_content_description">संवादको आइकन</string>
+    <string msgid="475402237100444685" name="installation_cancelled">"स्थापना रद्द गरियो।"</string>
+    <string msgid="863287960437940689" name="installation_failed">"स्थापना गर्न सकिएन।"</string>
+    <string msgid="5968445461040787716" name="installing_module">"मोड्युल स्थापना गर्दै:"</string>
     <string name="item_view_role_description">ट्याब</string>
     <string name="material_clock_toggle_content_description">पूर्वाह्न वा अपराह्न चयन गर्नुहोस्</string>
     <string name="material_hour_selection">घन्टा चयन गर्नुहोस्</string>
@@ -53,11 +60,12 @@
     <string name="material_timepicker_text_input_mode_description">समय इनपुट गर्न पाठ इनपुट मोडमा स्विच गर्नुहोस्।</string>
     <string name="mtrl_badge_numberless_content_description">नयाँ सूचना</string>
     <string name="mtrl_chip_close_icon_content_description">%1$s हटाउनुहोस्</string>
-    <string name="mtrl_exceed_max_badge_number_content_description">%1$d भन्दा बढी नयाँ सूचनाहरू</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d भन्दा बढी नयाँ सूचनाहरू</string>
     <string name="mtrl_picker_a11y_next_month">अर्को महिनामा सार्नुहोस्</string>
     <string name="mtrl_picker_a11y_prev_month">अघिल्लो महिनामा सार्नुहोस्</string>
     <string name="mtrl_picker_announce_current_selection">हालको चयन: %1$s</string>
-    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_cancel">रद्द गर्नुहोस्</string>
+    <string name="mtrl_picker_confirm">ठिक छ</string>
     <string name="mtrl_picker_date_header_selected">%1$s</string>
     <string name="mtrl_picker_date_header_title">मिति चयन गर्नुहोस्</string>
     <string name="mtrl_picker_date_header_unselected">चयन गरिएको मिति</string>
@@ -84,9 +92,14 @@
     <string name="mtrl_picker_toggle_to_day_selection">कुनै दिन चयन गर्ने विकल्प प्रयोग गर्न ट्याप गर्नुहोस्</string>
     <string name="mtrl_picker_toggle_to_text_input_mode">पाठको इनपुट मोडमा बदल्नुहोस्</string>
     <string name="mtrl_picker_toggle_to_year_selection">कुनै वर्ष चयन गर्ने विकल्प प्रयोग गर्न ट्याप गर्नुहोस्</string>
+    <string name="mtrl_timepicker_cancel">रद्द गर्नुहोस्</string>
+    <string name="mtrl_timepicker_confirm">ठिक छ</string>
     <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"माथि नेभिगेट गर्नुहोस्"</string>
     <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"नेभिगेसन ड्रअर खोल्नुहोस्"</string>
+    <string msgid="4702104660890557116" name="ok">"ठिक छ"</string>
     <string name="password_toggle_content_description">पासवर्ड देखाउनुहोस्</string>
+    <string msgid="8366783942222789124" name="progress">"प्रगति:"</string>
+    <string msgid="1065327189183624288" name="retry">"पुनः प्रयास गर्नुहोस्"</string>
     <string msgid="6264217191555673260" name="search_menu_title">"खोज"</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"९९९+"</string>
 </resources>
