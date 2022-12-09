@@ -3,7 +3,6 @@ package com.jrutkin.listwiz.activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.room.Room;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,14 +14,12 @@ import android.widget.TextView;
 
 import com.jrutkin.listwiz.R;
 import com.jrutkin.listwiz.adapter.TaskRecyclerViewAdapter;
-import com.jrutkin.listwiz.database.WizDatabase;
 import com.jrutkin.listwiz.models.TaskModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    WizDatabase wizDatabase;
 
     public static final String DB_NAME = "wizDatabase";
     public static final String TASK_DESC_TAG = "taskDesc";
@@ -33,11 +30,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        wizDatabase = Room.databaseBuilder(getApplicationContext(), WizDatabase.class, DB_NAME)
-                .fallbackToDestructiveMigration()
-                .allowMainThreadQueries()
-                .build();
 
         buttonSetup();
     }
@@ -79,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void recyclerViewSetup() {
 
-        List<TaskModel> taskList = wizDatabase.taskDao().findAll();
+        List<TaskModel> taskList = new ArrayList<>();
         // dummy list of tasks
 //        taskList.add(new TaskModel("Gym","As in -> Hit that"));
 //        taskList.add(new TaskModel("Tan","As in -> Get that"));

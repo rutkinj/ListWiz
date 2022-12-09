@@ -1,16 +1,8 @@
 package com.jrutkin.listwiz.models;
 
 import androidx.annotation.NonNull;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
 
-import java.util.Date;
-
-import kotlinx.coroutines.scheduling.Task;
-
-@Entity
 public class TaskModel {
-    @PrimaryKey(autoGenerate = true)
     public Long id;
     private String taskName;
     private String taskDesc;

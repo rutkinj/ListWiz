@@ -1,9 +1,7 @@
 package com.jrutkin.listwiz.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -12,12 +10,10 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.jrutkin.listwiz.R;
-import com.jrutkin.listwiz.database.WizDatabase;
 import com.jrutkin.listwiz.models.TaskModel;
 
 public class AddTaskActivity extends AppCompatActivity {
 
-    WizDatabase wizDatabase;
 
     Spinner statusSpinner;
 
@@ -25,11 +21,6 @@ public class AddTaskActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_task);
-        // DB
-        wizDatabase = Room.databaseBuilder(getApplicationContext(), WizDatabase.class, MainActivity.DB_NAME)
-                .fallbackToDestructiveMigration()
-                .allowMainThreadQueries()
-                .build();
 
         // SETUP
         statusSpinnerSetup();
@@ -46,7 +37,6 @@ public class AddTaskActivity extends AppCompatActivity {
                     TaskModel.TaskStatusEnum.fromString(statusSpinner.getSelectedItem().toString())
             );
             // ADD TO DB
-            wizDatabase.taskDao().insertTask(newTask);
             // TOAST
             Toast.makeText(this, "Task Submitted", Toast.LENGTH_SHORT).show();
         });

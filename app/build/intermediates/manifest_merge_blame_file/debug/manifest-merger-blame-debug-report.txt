@@ -110,49 +110,40 @@
 63-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:20:17-33
 64        </activity>
 65
-66        <service
-66-->[androidx.room:room-runtime:2.4.3] /Users/jsr/.gradle/caches/transforms-3/4c4bbe8def8631c1151c061ee75b6868/transformed/room-runtime-2.4.3/AndroidManifest.xml:25:9-28:40
-67            android:name="androidx.room.MultiInstanceInvalidationService"
-67-->[androidx.room:room-runtime:2.4.3] /Users/jsr/.gradle/caches/transforms-3/4c4bbe8def8631c1151c061ee75b6868/transformed/room-runtime-2.4.3/AndroidManifest.xml:26:13-74
-68            android:directBootAware="true"
-68-->[androidx.room:room-runtime:2.4.3] /Users/jsr/.gradle/caches/transforms-3/4c4bbe8def8631c1151c061ee75b6868/transformed/room-runtime-2.4.3/AndroidManifest.xml:27:13-43
-69            android:exported="false" />
-69-->[androidx.room:room-runtime:2.4.3] /Users/jsr/.gradle/caches/transforms-3/4c4bbe8def8631c1151c061ee75b6868/transformed/room-runtime-2.4.3/AndroidManifest.xml:28:13-37
-70
-71        <provider
-71-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-72            android:name="androidx.startup.InitializationProvider"
-72-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
-73            android:authorities="com.jrutkin.listwiz.androidx-startup"
-73-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
-74            android:exported="false" >
-74-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
-75            <meta-data
-75-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-76                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-76-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
-77                android:value="androidx.startup" />
-77-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
-78            <meta-data
-78-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jsr/.gradle/caches/transforms-3/dd1064e81b3445eb173cd45521bfd469/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-79                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-79-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jsr/.gradle/caches/transforms-3/dd1064e81b3445eb173cd45521bfd469/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-80                android:value="androidx.startup" />
-80-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jsr/.gradle/caches/transforms-3/dd1064e81b3445eb173cd45521bfd469/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-81        </provider>
-82
-83        <uses-library
-83-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-84            android:name="androidx.window.extensions"
-84-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-85            android:required="false" />
-85-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
-86        <uses-library
-86-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-87            android:name="androidx.window.sidecar"
-87-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-88            android:required="false" />
-88-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-89    </application>
-90
-91</manifest>
+66        <provider
+66-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+67            android:name="androidx.startup.InitializationProvider"
+67-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+68            android:authorities="com.jrutkin.listwiz.androidx-startup"
+68-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+69            android:exported="false" >
+69-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+70            <meta-data
+70-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+71-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+72                android:value="androidx.startup" />
+72-->[androidx.emoji2:emoji2:1.0.0] /Users/jsr/.gradle/caches/transforms-3/4b580972190c9e236a669c6a1f1f8a9e/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+73            <meta-data
+73-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jsr/.gradle/caches/transforms-3/dd1064e81b3445eb173cd45521bfd469/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jsr/.gradle/caches/transforms-3/dd1064e81b3445eb173cd45521bfd469/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+75                android:value="androidx.startup" />
+75-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/jsr/.gradle/caches/transforms-3/dd1064e81b3445eb173cd45521bfd469/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+76        </provider>
+77
+78        <uses-library
+78-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+79            android:name="androidx.window.extensions"
+79-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+80            android:required="false" />
+80-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+81        <uses-library
+81-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+82            android:name="androidx.window.sidecar"
+82-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+83            android:required="false" />
+83-->[androidx.window:window:1.0.0] /Users/jsr/.gradle/caches/transforms-3/073f10b23065a04cd4c659168bad23fb/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+84    </application>
+85
+86</manifest>
