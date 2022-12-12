@@ -20,6 +20,7 @@ public class AddTaskActivity extends AppCompatActivity {
     public static final String TAG = "AddTaskActivity";
 
     Spinner statusSpinner;
+    Spinner teamSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,11 +54,17 @@ public class AddTaskActivity extends AppCompatActivity {
 
     public void statusSpinnerSetup() {
         // must add spinner first
-        statusSpinner = findViewById(R.id.AddTaskSpinner);
+        statusSpinner = findViewById(R.id.AddTaskSpinnerStatus);
         statusSpinner.setAdapter(new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_spinner_item,
                 StatusEnum.values()
         ));
     }
+
+    public void teamSpinnerSetup(){
+        teamSpinner = findViewById(R.id.AddTaskSpinnerTeam);
+    }
+
+    // hardcoded teams, add to aws db
 }

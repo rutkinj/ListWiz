@@ -99,7 +99,7 @@ public class ClickThruRVToDetailsTest {
         appCompatEditText4.perform(replaceText("You know you'll get around to it"), closeSoftKeyboard());
 
         ViewInteraction appCompatSpinner = onView(
-                allOf(withId(R.id.AddTaskSpinner),
+                allOf(withId(R.id.AddTaskSpinnerStatus),
                         childAtPosition(
                                 childAtPosition(
                                         withId(android.R.id.content),
