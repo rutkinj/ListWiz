@@ -16,7 +16,8 @@ id AddETTaskTitle
 id AddTVTaskDescHeader
 id AddTVTaskTitleHeader
 id AddTVTitle
-id AddTaskSpinner
+id AddTaskSpinnerStatus
+id AddTaskSpinnerTeam
 id AllTVTitle
 id DetailTVTaskDesc
 id DetailTVTaskName

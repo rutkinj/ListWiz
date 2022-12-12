@@ -3,6 +3,17 @@ subscription OnCreateTask($filter: ModelSubscriptionTaskFilterInput) {
   onCreateTask(filter: $filter) {
     id
     name
+    taskOwnerID
+    taskOwner {
+      id
+      name
+      email
+      ownedTasks {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
     description
     status
     createdDateTime
@@ -14,6 +25,17 @@ subscription OnUpdateTask($filter: ModelSubscriptionTaskFilterInput) {
   onUpdateTask(filter: $filter) {
     id
     name
+    taskOwnerID
+    taskOwner {
+      id
+      name
+      email
+      ownedTasks {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
     description
     status
     createdDateTime
@@ -25,9 +47,86 @@ subscription OnDeleteTask($filter: ModelSubscriptionTaskFilterInput) {
   onDeleteTask(filter: $filter) {
     id
     name
+    taskOwnerID
+    taskOwner {
+      id
+      name
+      email
+      ownedTasks {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
     description
     status
     createdDateTime
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateTaskOwner($filter: ModelSubscriptionTaskOwnerFilterInput) {
+  onCreateTaskOwner(filter: $filter) {
+    id
+    name
+    email
+    ownedTasks {
+      items {
+        id
+        name
+        taskOwnerID
+        description
+        status
+        createdDateTime
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateTaskOwner($filter: ModelSubscriptionTaskOwnerFilterInput) {
+  onUpdateTaskOwner(filter: $filter) {
+    id
+    name
+    email
+    ownedTasks {
+      items {
+        id
+        name
+        taskOwnerID
+        description
+        status
+        createdDateTime
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteTaskOwner($filter: ModelSubscriptionTaskOwnerFilterInput) {
+  onDeleteTaskOwner(filter: $filter) {
+    id
+    name
+    email
+    ownedTasks {
+      items {
+        id
+        name
+        taskOwnerID
+        description
+        status
+        createdDateTime
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
     createdAt
     updatedAt
   }

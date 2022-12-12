@@ -41,12 +41,16 @@ public final class ActivityAddTaskBinding implements ViewBinding {
   public final TextView AddTVTitle;
 
   @NonNull
-  public final Spinner AddTaskSpinner;
+  public final Spinner AddTaskSpinnerStatus;
+
+  @NonNull
+  public final Spinner AddTaskSpinnerTeam;
 
   private ActivityAddTaskBinding(@NonNull ConstraintLayout rootView, @NonNull Button AddButton,
       @NonNull EditText AddETTaskDesc, @NonNull EditText AddETTaskTitle,
       @NonNull TextView AddTVTaskDescHeader, @NonNull TextView AddTVTaskTitleHeader,
-      @NonNull TextView AddTVTitle, @NonNull Spinner AddTaskSpinner) {
+      @NonNull TextView AddTVTitle, @NonNull Spinner AddTaskSpinnerStatus,
+      @NonNull Spinner AddTaskSpinnerTeam) {
     this.rootView = rootView;
     this.AddButton = AddButton;
     this.AddETTaskDesc = AddETTaskDesc;
@@ -54,7 +58,8 @@ public final class ActivityAddTaskBinding implements ViewBinding {
     this.AddTVTaskDescHeader = AddTVTaskDescHeader;
     this.AddTVTaskTitleHeader = AddTVTaskTitleHeader;
     this.AddTVTitle = AddTVTitle;
-    this.AddTaskSpinner = AddTaskSpinner;
+    this.AddTaskSpinnerStatus = AddTaskSpinnerStatus;
+    this.AddTaskSpinnerTeam = AddTaskSpinnerTeam;
   }
 
   @Override
@@ -120,14 +125,21 @@ public final class ActivityAddTaskBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.AddTaskSpinner;
-      Spinner AddTaskSpinner = ViewBindings.findChildViewById(rootView, id);
-      if (AddTaskSpinner == null) {
+      id = R.id.AddTaskSpinnerStatus;
+      Spinner AddTaskSpinnerStatus = ViewBindings.findChildViewById(rootView, id);
+      if (AddTaskSpinnerStatus == null) {
+        break missingId;
+      }
+
+      id = R.id.AddTaskSpinnerTeam;
+      Spinner AddTaskSpinnerTeam = ViewBindings.findChildViewById(rootView, id);
+      if (AddTaskSpinnerTeam == null) {
         break missingId;
       }
 
       return new ActivityAddTaskBinding((ConstraintLayout) rootView, AddButton, AddETTaskDesc,
-          AddETTaskTitle, AddTVTaskDescHeader, AddTVTaskTitleHeader, AddTVTitle, AddTaskSpinner);
+          AddETTaskTitle, AddTVTaskDescHeader, AddTVTaskTitleHeader, AddTVTitle,
+          AddTaskSpinnerStatus, AddTaskSpinnerTeam);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

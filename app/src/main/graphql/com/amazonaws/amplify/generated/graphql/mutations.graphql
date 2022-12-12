@@ -6,6 +6,17 @@ mutation CreateTask(
   createTask(input: $input, condition: $condition) {
     id
     name
+    taskOwnerID
+    taskOwner {
+      id
+      name
+      email
+      ownedTasks {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
     description
     status
     createdDateTime
@@ -20,6 +31,17 @@ mutation UpdateTask(
   updateTask(input: $input, condition: $condition) {
     id
     name
+    taskOwnerID
+    taskOwner {
+      id
+      name
+      email
+      ownedTasks {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
     description
     status
     createdDateTime
@@ -34,9 +56,95 @@ mutation DeleteTask(
   deleteTask(input: $input, condition: $condition) {
     id
     name
+    taskOwnerID
+    taskOwner {
+      id
+      name
+      email
+      ownedTasks {
+        nextToken
+      }
+      createdAt
+      updatedAt
+    }
     description
     status
     createdDateTime
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateTaskOwner(
+  $input: CreateTaskOwnerInput!
+  $condition: ModelTaskOwnerConditionInput
+) {
+  createTaskOwner(input: $input, condition: $condition) {
+    id
+    name
+    email
+    ownedTasks {
+      items {
+        id
+        name
+        taskOwnerID
+        description
+        status
+        createdDateTime
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateTaskOwner(
+  $input: UpdateTaskOwnerInput!
+  $condition: ModelTaskOwnerConditionInput
+) {
+  updateTaskOwner(input: $input, condition: $condition) {
+    id
+    name
+    email
+    ownedTasks {
+      items {
+        id
+        name
+        taskOwnerID
+        description
+        status
+        createdDateTime
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteTaskOwner(
+  $input: DeleteTaskOwnerInput!
+  $condition: ModelTaskOwnerConditionInput
+) {
+  deleteTaskOwner(input: $input, condition: $condition) {
+    id
+    name
+    email
+    ownedTasks {
+      items {
+        id
+        name
+        taskOwnerID
+        description
+        status
+        createdDateTime
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
     createdAt
     updatedAt
   }
