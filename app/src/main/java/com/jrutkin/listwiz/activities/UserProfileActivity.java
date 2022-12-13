@@ -42,7 +42,7 @@ public class UserProfileActivity extends AppCompatActivity {
         Amplify.API.query(
                 ModelQuery.list(TaskOwner.class),
                 success -> {
-                    Log.i(TAG,"bingbong success to read owners");
+                    Log.i(TAG,"Successfully read from owners");
                     ArrayList<String> ownerNames = new ArrayList<>();
                     ArrayList<TaskOwner> taskOwners = new ArrayList<>();
                     for (TaskOwner taskOwner: success.getData()){
@@ -56,7 +56,7 @@ public class UserProfileActivity extends AppCompatActivity {
                 },
                 failure -> {
                     taskOwnersFuture.complete(null);
-                    Log.w(TAG,"byngbang we failed to read owners");
+                    Log.w(TAG,"Failed to read from owners");
                 });
 
         saveToSharedPrefs();
@@ -68,10 +68,11 @@ public class UserProfileActivity extends AppCompatActivity {
 
         submitButton.setOnClickListener(view -> {
             EditText usernameET = findViewById(R.id.UserProfileETUsername);
+            Spinner teamSpinner = findViewById(R.id.UserProfileSpinnerTeam);
             String usernameText = usernameET.getText().toString();
-            String userTeamText = usernameET.getText().toString();
+            String userTeamText = teamSpinner.getSelectedItem().toString();
             prefEditor.putString(USERNAME_TAG, usernameText);
-            prefEditor.putString(USER_TEAM_TAG, usernameText);
+            prefEditor.putString(USER_TEAM_TAG, userTeamText);
 
             prefEditor.apply();
 
@@ -80,7 +81,7 @@ public class UserProfileActivity extends AppCompatActivity {
     }
 
     public void teamSpinnerSetup(ArrayList<String> ownerNames){
-        teamSpinner = findViewById(R.id.AddTaskSpinnerTeam);
+        teamSpinner = findViewById(R.id.UserProfileSpinnerTeam);
         teamSpinner.setAdapter(new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_spinner_item,

@@ -2720,6 +2720,7 @@ id TaskFragTVTaskDesc
 id TaskFragTVTaskName
 id TaskFragment
 id UserProfileETUsername
+id UserProfileSpinnerTeam
 id UserProfileSubmitButton
 id accelerate
 id accessibility_action_clickable_span

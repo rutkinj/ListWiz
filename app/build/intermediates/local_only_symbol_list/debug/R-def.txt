@@ -33,6 +33,7 @@ id TaskFragTVTaskDesc
 id TaskFragTVTaskName
 id TaskFragment
 id UserProfileETUsername
+id UserProfileSpinnerTeam
 id UserProfileSubmitButton
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment

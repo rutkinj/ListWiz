@@ -41,7 +41,7 @@ public class AddTaskActivity extends AppCompatActivity {
         Amplify.API.query(
                 ModelQuery.list(TaskOwner.class),
                 success -> {
-                    Log.i(TAG,"bingbong success to read owners");
+                    Log.i(TAG,"Successfully read from owners");
                     ArrayList<String> ownerNames = new ArrayList<>();
                     ArrayList<TaskOwner> taskOwners = new ArrayList<>();
                     for (TaskOwner taskOwner: success.getData()){
@@ -55,7 +55,7 @@ public class AddTaskActivity extends AppCompatActivity {
                 },
                 failure -> {
                     taskOwnersFuture.complete(null);
-                    Log.w(TAG,"byngbang we failed to read owners");
+                    Log.w(TAG,"Failed to read from owners");
                 });
 
         // SETUP
