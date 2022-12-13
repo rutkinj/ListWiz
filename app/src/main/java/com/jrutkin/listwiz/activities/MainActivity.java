@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String TASK_NAME_TAG = "taskName";
     public static final String TASK_STATUS_TAG = "taskStatus";
 
+    SharedPreferences sharedPrefs;
     private List<Task> taskList;
     private TaskRecyclerViewAdapter adapter;
 
@@ -37,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        taskList = new ArrayList<>();
         buttonSetup();
     }
 
@@ -45,12 +45,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
+        sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+        taskList = new ArrayList<>();
+
         Amplify.API.query(
                 ModelQuery.list(Task.class),
                 success -> {
                     Log.i(TAG, "MainActivity.OnResume(): Successfully got tasks");
                     for(Task task:success.getData()){
-                        taskList.add(task);
+
+                        if(task.getTaskOwner().getName().equals(sharedPrefs.getString(UserProfileActivity.USER_TEAM_TAG,"No team"))) {
+                            taskList.add(task);
+                        }
                     }
                     runOnUiThread(() -> adapter.notifyDataSetChanged());
                 },
@@ -82,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void greetingSetup(){
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
         String username = sharedPrefs.getString(UserProfileActivity.USERNAME_TAG, "No username");
 
         ((TextView)findViewById(R.id.MainTVUsername)).setText(username);

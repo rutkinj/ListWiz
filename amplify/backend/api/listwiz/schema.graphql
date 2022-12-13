@@ -4,6 +4,8 @@
 type Task @model @auth(rules: [{allow: public}]){
     id: ID!
     name: String!
+    taskOwnerID: ID! @index(name: "byOwner", sortKeyFields: ["name"])
+    taskOwner: TaskOwner @belongsTo(fields: ["taskOwnerID"])
     description: String
     status: StatusEnum
     createdDateTime: AWSDateTime
@@ -16,4 +18,9 @@ enum StatusEnum{
     Finished
 }
 
-
+type TaskOwner @model @auth(rules: [{allow: public}]){
+    id: ID!
+    name: String!
+    email: String
+    ownedTasks: [Task] @hasMany(indexName: "byOwner", fields:["id"])
+}

@@ -12,10 +12,6 @@
         "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/layout/activity_main.xml"
     },
     {
-        "merged": "com.jrutkin.listwiz.app-merged_res-40:/raw_amplifyconfiguration.json.flat",
-        "source": "com.jrutkin.listwiz.app-main-42:/raw/amplifyconfiguration.json"
-    },
-    {
         "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-merged_res-40:/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/mipmap-anydpi-v26/ic_launcher.xml"
     },
@@ -96,12 +92,12 @@
         "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-merged_res-40:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.jrutkin.listwiz.app-merged_res-40:/layout_activity_user_profile.xml.flat",
+        "source": "com.jrutkin.listwiz.app-main-42:/layout/activity_user_profile.xml"
     },
     {
-        "merged": "com.jrutkin.listwiz.app-merged_res-40:/raw_awsconfiguration.json.flat",
-        "source": "com.jrutkin.listwiz.app-main-42:/raw/awsconfiguration.json"
+        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-merged_res-40:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-merged_res-40:/layout_activity_user_profile.xml.flat",

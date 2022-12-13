@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -24,12 +25,17 @@ public final class ActivityUserProfileBinding implements ViewBinding {
   public final EditText UserProfileETUsername;
 
   @NonNull
+  public final Spinner UserProfileSpinnerTeam;
+
+  @NonNull
   public final Button UserProfileSubmitButton;
 
   private ActivityUserProfileBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText UserProfileETUsername, @NonNull Button UserProfileSubmitButton) {
+      @NonNull EditText UserProfileETUsername, @NonNull Spinner UserProfileSpinnerTeam,
+      @NonNull Button UserProfileSubmitButton) {
     this.rootView = rootView;
     this.UserProfileETUsername = UserProfileETUsername;
+    this.UserProfileSpinnerTeam = UserProfileSpinnerTeam;
     this.UserProfileSubmitButton = UserProfileSubmitButton;
   }
 
@@ -66,6 +72,12 @@ public final class ActivityUserProfileBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.UserProfileSpinnerTeam;
+      Spinner UserProfileSpinnerTeam = ViewBindings.findChildViewById(rootView, id);
+      if (UserProfileSpinnerTeam == null) {
+        break missingId;
+      }
+
       id = R.id.UserProfileSubmitButton;
       Button UserProfileSubmitButton = ViewBindings.findChildViewById(rootView, id);
       if (UserProfileSubmitButton == null) {
@@ -73,7 +85,7 @@ public final class ActivityUserProfileBinding implements ViewBinding {
       }
 
       return new ActivityUserProfileBinding((ConstraintLayout) rootView, UserProfileETUsername,
-          UserProfileSubmitButton);
+          UserProfileSpinnerTeam, UserProfileSubmitButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

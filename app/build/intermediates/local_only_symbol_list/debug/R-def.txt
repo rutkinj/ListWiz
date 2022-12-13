@@ -16,7 +16,8 @@ id AddETTaskTitle
 id AddTVTaskDescHeader
 id AddTVTaskTitleHeader
 id AddTVTitle
-id AddTaskSpinner
+id AddTaskSpinnerStatus
+id AddTaskSpinnerTeam
 id AllTVTitle
 id DetailTVTaskDesc
 id DetailTVTaskName
@@ -32,6 +33,7 @@ id TaskFragTVTaskDesc
 id TaskFragTVTaskName
 id TaskFragment
 id UserProfileETUsername
+id UserProfileSpinnerTeam
 id UserProfileSubmitButton
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
