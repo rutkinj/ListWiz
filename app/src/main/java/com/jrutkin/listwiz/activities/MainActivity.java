@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amplifyframework.api.graphql.model.ModelQuery;
+import com.amplifyframework.auth.AuthUserAttributeKey;
+import com.amplifyframework.auth.options.AuthSignUpOptions;
 import com.amplifyframework.core.Amplify;
 import com.amplifyframework.datastore.generated.model.Task;
 import com.jrutkin.listwiz.R;
@@ -38,6 +40,37 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //hardcode signup verify login/////////////
+//        //signup
+//        Amplify.Auth.signUp("awsjoer@gmail.com",
+//                "password123",
+//                AuthSignUpOptions.builder()
+//                        .userAttribute(AuthUserAttributeKey.email(), "awsjoer@gmail.com")
+//                        .userAttribute(AuthUserAttributeKey.nickname(), "Joe")
+//                        .build(),
+//                success -> Log.i(TAG, "SignUp success: " + success.toString()),
+//                failure -> Log.w(TAG, "SignUp failure: " + failure.toString())
+//        );
+        //verification
+//        Amplify.Auth.confirmSignUp(
+//                "awsjoer@gmail.com",
+//                "090427",
+//                success -> Log.i(TAG, "Confirm-SignUp success: " + success.toString()),
+//                failure -> Log.w(TAG, "Confirm-SignUp failure: " + failure.toString())
+//        );
+        //login/signin
+        Amplify.Auth.signIn(
+                "awsjoer@gmail.com",
+                "password123",
+                success -> Log.i(TAG, "SignIn success: " + success.toString()),
+                failure -> Log.e(TAG, "SignIn failure: " + failure.toString())
+        );
+//        signout doesnt work...
+//        Amplify.Auth.signOut(
+//                success -> Log.i(TAG, "SignOut success"),
+//                failure -> Log.w(TAG, "SignOut failure: " + failure.toString())
+//        );
+//        end hardcode/////////////
         buttonSetup();
     }
 
