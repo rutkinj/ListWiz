@@ -139,30 +139,30 @@ MERGED from [com.google.android.play:core:1.9.1] /Users/jsr/.gradle/caches/trans
 		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:8:9-65
 	android:name
 		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:6:9-50
-activity#com.jrutkin.listwiz.VerifySignUpActivity
+activity#com.jrutkin.listwiz.activities.auth.VerifySignUpActivity
 ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:exported
 		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:17:13-49
+		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:17:13-65
 meta-data#android.app.lib_name
 ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:19:13-21:36
 	android:value
 		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:21:17-33
 	android:name
 		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:20:17-52
-activity#com.jrutkin.listwiz.SignInActivity
+activity#com.jrutkin.listwiz.activities.auth.SignInActivity
 ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:23:9-29:20
 	android:exported
 		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:24:13-43
-activity#com.jrutkin.listwiz.SignUpActivity
+		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:24:13-59
+activity#com.jrutkin.listwiz.activities.auth.SignUpActivity
 ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:30:9-36:20
 	android:exported
 		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:31:13-43
+		ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:31:13-59
 activity#com.jrutkin.listwiz.activities.TaskDetailActivity
 ADDED from /Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:37:9-43:20
 	android:exported

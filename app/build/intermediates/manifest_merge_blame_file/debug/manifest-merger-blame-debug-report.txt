@@ -65,8 +65,8 @@
 39-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:14:9-45
 40        <activity
 40-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:16:9-22:20
-41            android:name="com.jrutkin.listwiz.VerifySignUpActivity"
-41-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:17:13-49
+41            android:name="com.jrutkin.listwiz.activities.auth.VerifySignUpActivity"
+41-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:17:13-65
 42            android:exported="false" >
 42-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:18:13-37
 43            <meta-data
@@ -78,8 +78,8 @@
 46        </activity>
 47        <activity
 47-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:23:9-29:20
-48            android:name="com.jrutkin.listwiz.SignInActivity"
-48-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:24:13-43
+48            android:name="com.jrutkin.listwiz.activities.auth.SignInActivity"
+48-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:24:13-59
 49            android:exported="false" >
 49-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:25:13-37
 50            <meta-data
@@ -91,8 +91,8 @@
 53        </activity>
 54        <activity
 54-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:30:9-36:20
-55            android:name="com.jrutkin.listwiz.SignUpActivity"
-55-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:31:13-43
+55            android:name="com.jrutkin.listwiz.activities.auth.SignUpActivity"
+55-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:31:13-59
 56            android:exported="false" >
 56-->/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/AndroidManifest.xml:32:13-37
 57            <meta-data

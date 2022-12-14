@@ -38,21 +38,21 @@
         android:testOnly="true"
         android:theme="@style/Theme.ListWiz" >
         <activity
-            android:name="com.jrutkin.listwiz.VerifySignUpActivity"
+            android:name="com.jrutkin.listwiz.activities.auth.VerifySignUpActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.jrutkin.listwiz.SignInActivity"
+            android:name="com.jrutkin.listwiz.activities.auth.SignInActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.jrutkin.listwiz.SignUpActivity"
+            android:name="com.jrutkin.listwiz.activities.auth.SignUpActivity"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"

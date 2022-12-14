@@ -9,16 +9,22 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.amplifyframework.api.graphql.model.ModelQuery;
-import com.amplifyframework.auth.AuthUserAttributeKey;
-import com.amplifyframework.auth.options.AuthSignUpOptions;
+import com.amplifyframework.auth.AuthUser;
+import com.amplifyframework.auth.cognito.result.AWSCognitoAuthSignOutResult;
+import com.amplifyframework.auth.cognito.result.GlobalSignOutError;
+import com.amplifyframework.auth.cognito.result.HostedUIError;
+import com.amplifyframework.auth.cognito.result.RevokeTokenError;
 import com.amplifyframework.core.Amplify;
 import com.amplifyframework.datastore.generated.model.Task;
 import com.jrutkin.listwiz.R;
+import com.jrutkin.listwiz.activities.auth.SignInActivity;
+import com.jrutkin.listwiz.activities.auth.SignUpActivity;
 import com.jrutkin.listwiz.adapter.TaskRecyclerViewAdapter;
 
 import java.util.ArrayList;
@@ -33,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     SharedPreferences sharedPrefs;
     private List<Task> taskList;
     private TaskRecyclerViewAdapter adapter;
+    public AuthUser authUser = null;
 
 
     @Override
@@ -59,12 +66,12 @@ public class MainActivity extends AppCompatActivity {
 //                failure -> Log.w(TAG, "Confirm-SignUp failure: " + failure.toString())
 //        );
         //login/signin
-        Amplify.Auth.signIn(
-                "awsjoer@gmail.com",
-                "password123",
-                success -> Log.i(TAG, "SignIn success: " + success.toString()),
-                failure -> Log.e(TAG, "SignIn failure: " + failure.toString())
-        );
+//        Amplify.Auth.signIn(
+//                "awsjoer@gmail.com",
+//                "password123",
+//                success -> Log.i(TAG, "SignIn success: " + success.toString()),
+//                failure -> Log.e(TAG, "SignIn failure: " + failure.toString())
+//        );
 //        signout doesnt work...
 //        Amplify.Auth.signOut(
 //                success -> Log.i(TAG, "SignOut success"),
@@ -72,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
 //        );
 //        end hardcode/////////////
         buttonSetup();
+        logoutButtonSetup();
     }
 
     @Override
@@ -98,6 +106,35 @@ public class MainActivity extends AppCompatActivity {
 
         greetingSetup();
         recyclerViewSetup();
+
+        Amplify.Auth.fetchUserAttributes(
+                attributes -> {
+                    Log.i(TAG, "Successfully got user attributes: " + attributes);
+//                    authUser = attributes.
+                },
+                failure -> Log.w(TAG, "Failed to fetch user attributes")
+        );
+
+//        Button signIn = findViewById(R.id.MainButtonSignIn);
+//        Button signUp = findViewById(R.id.MainButtonSignUp);
+//        Button signOut = findViewById(R.id.MainButtonSignOut);
+
+
+        // get current authenticted user
+        // if user is null -> show signUp button, hide signIn button
+//        if (authUser == null){
+//            // not signed in: see sign up sign in hide logout
+//            signIn.setVisibility(View.VISIBLE);
+//            signUp.setVisibility(View.VISIBLE);
+//            signOut.setVisibility(View.INVISIBLE);
+//        } else {
+//            String username = authUser.getUsername();
+//            Log.i(TAG, "Username is: " + username);
+//            // signed in. hhide sign up and sign in and show logout
+//            signIn.setVisibility(View.INVISIBLE);
+//            signUp.setVisibility(View.INVISIBLE);
+//            signOut.setVisibility(View.VISIBLE);
+//        }
     }
 
     private void buttonSetup(){
@@ -117,6 +154,16 @@ public class MainActivity extends AppCompatActivity {
         toUserProfileIV.setOnClickListener(view -> {
             Intent goToUserProfileActivity = new Intent(this, UserProfileActivity.class);
             startActivity(goToUserProfileActivity);
+        });
+
+        findViewById(R.id.MainButtonSignIn).setOnClickListener(view -> {
+            Intent goToSignInActivity = new Intent(this, SignInActivity.class);
+            startActivity(goToSignInActivity);
+        });
+
+        findViewById(R.id.MainButtonSignUp).setOnClickListener(view -> {
+            Intent goToSignUpActivity = new Intent(this, SignUpActivity.class);
+            startActivity(goToSignUpActivity);
         });
     }
 
@@ -150,5 +197,43 @@ public class MainActivity extends AppCompatActivity {
         Intent goToTaskDetail = new Intent(this, TaskDetailActivity.class);
         goToTaskDetail.putExtra(TASK_NAME_TAG, taskButton.getText().toString());
         startActivity(goToTaskDetail);
+    }
+
+    public void logoutButtonSetup(){
+        findViewById(R.id.MainButtonSignOut).setOnClickListener(view ->{
+            Amplify.Auth.signOut( signOutResult -> {
+                if (signOutResult instanceof AWSCognitoAuthSignOutResult.CompleteSignOut) {
+                    // Sign Out completed fully and without errors.
+                    Log.i("AuthQuickStart", "Signed out successfully");
+                } else if (signOutResult instanceof AWSCognitoAuthSignOutResult.PartialSignOut) {
+                    // Sign Out completed with some errors. User is signed out of the device.
+                    AWSCognitoAuthSignOutResult.PartialSignOut partialSignOutResult =
+                            (AWSCognitoAuthSignOutResult.PartialSignOut) signOutResult;
+
+                    HostedUIError hostedUIError = partialSignOutResult.getHostedUIError();
+                    if (hostedUIError != null) {
+                        Log.e("AuthQuickStart", "HostedUI Error", hostedUIError.getException());
+                        // Optional: Re-launch hostedUIError.getUrl() in a Custom tab to clear Cognito web session.
+                    }
+
+                    GlobalSignOutError globalSignOutError = partialSignOutResult.getGlobalSignOutError();
+                    if (globalSignOutError != null) {
+                        Log.e("AuthQuickStart", "GlobalSignOut Error", globalSignOutError.getException());
+                        // Optional: Use escape hatch to retry revocation of globalSignOutError.getAccessToken().
+                    }
+
+                    RevokeTokenError revokeTokenError = partialSignOutResult.getRevokeTokenError();
+                    if (revokeTokenError != null) {
+                        Log.e("AuthQuickStart", "RevokeToken Error", revokeTokenError.getException());
+                        // Optional: Use escape hatch to retry revocation of revokeTokenError.getRefreshToken().
+                    }
+                } else if (signOutResult instanceof AWSCognitoAuthSignOutResult.FailedSignOut) {
+                    AWSCognitoAuthSignOutResult.FailedSignOut failedSignOutResult =
+                            (AWSCognitoAuthSignOutResult.FailedSignOut) signOutResult;
+                    // Sign Out failed with an exception, leaving the user signed in.
+                    Log.e("AuthQuickStart", "Sign out Failed", failedSignOutResult.getException());
+                }
+            });
+        });
     }
 }
