@@ -2895,6 +2895,7 @@ int id easeIn 0x7f0800d1
 int id easeInOut 0x7f0800d2
 int id easeOut 0x7f0800d3
 int id east 0x7f0800d4
+int id editTextTextEmailAddress 0x7f08022c
 int id edit_query 0x7f0800d5
 int id elastic 0x7f0800d6
 int id embed 0x7f0800d7
@@ -3187,6 +3188,7 @@ int id textSpacerNoButtons 0x7f0801f5
 int id textSpacerNoTitle 0x7f0801f6
 int id textStart 0x7f0801f7
 int id textTop 0x7f0801f8
+int id textView 0x7f08022d
 int id text_input_end_icon 0x7f0801f9
 int id text_input_error_icon 0x7f0801fa
 int id text_input_start_icon 0x7f0801fb
@@ -3365,8 +3367,11 @@ int layout activity_add_task 0x7f0b001c
 int layout activity_all_tasks 0x7f0b001d
 int layout activity_dev_menu 0x7f0b001e
 int layout activity_main 0x7f0b001f
+int layout activity_sign_in 0x7f0b007e
+int layout activity_sign_up 0x7f0b007f
 int layout activity_task_detail 0x7f0b0020
 int layout activity_user_profile 0x7f0b0021
+int layout activity_verify_sign_up 0x7f0b0080
 int layout browser_actions_context_menu_page 0x7f0b0022
 int layout browser_actions_context_menu_row 0x7f0b0023
 int layout custom_dialog 0x7f0b0024

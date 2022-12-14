@@ -3,14 +3,17 @@ package com.jrutkin.listwiz.activities.auth;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.amplifyframework.core.Amplify;
 import com.jrutkin.listwiz.R;
 
 public class VerifySignUpActivity extends AppCompatActivity {
-    public static final String TAG = "verifySignUpActivity";
+    public static final String TAG = "VerifySignUpActivity";
     Intent callingIntent;
 
     @Override
@@ -24,11 +27,22 @@ public class VerifySignUpActivity extends AppCompatActivity {
 
     public void verifyFormSetup(){
         String userEmail = callingIntent.getStringExtra(SignUpActivity.SIGNUP_EMAIL_TAG);
-        // get the button () -> {
-        String verificationCode = 12//get the confirmation code
-                Amplify.Auth.confirmSignUp(userEmail, verificationCode,
-                        success -> Log.i(TAG, "Confirm-SignUp success: " + success.toString()),
-                        failure -> Log.w(TAG, "Confirm-SignUp failure: " + failure.toString())
+        findViewById(R.id.VerifyButtonSubmit).setOnClickListener(view -> {
+            String verificationCode = ((EditText)findViewById(R.id.VerifyETCode)).getText().toString();
+                Amplify.Auth.confirmSignUp(
+                    userEmail,
+                    verificationCode,
+                    success -> {
+                        Log.i(TAG, "Verification success: " + success);
+                        Intent goToSignInActivity = new Intent(this, SignUpActivity.class);
+                        goToSignInActivity.putExtra(SignUpActivity.SIGNUP_EMAIL_TAG, userEmail);
+                        startActivity(goToSignInActivity);
+                    },
+                    failure -> {
+                        Log.w(TAG, "Verification failure: " + failure);
+                        runOnUiThread(() -> Toast.makeText(VerifySignUpActivity.this, "Failed to verify", Toast.LENGTH_SHORT));
+                    }
                 );
+        });
     }
 }

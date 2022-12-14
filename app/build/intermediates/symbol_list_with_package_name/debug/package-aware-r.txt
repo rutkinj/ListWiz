@@ -2896,6 +2896,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextTextEmailAddress
 id edit_query
 id elastic
 id embed
@@ -3188,6 +3189,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3366,8 +3368,11 @@ layout activity_add_task
 layout activity_all_tasks
 layout activity_dev_menu
 layout activity_main
+layout activity_sign_in
+layout activity_sign_up
 layout activity_task_detail
 layout activity_user_profile
+layout activity_verify_sign_up
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
