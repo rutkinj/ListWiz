@@ -14,6 +14,27 @@
         android:theme="@style/Theme.ListWiz"
         tools:targetApi="31">
         <activity
+            android:name=".activities.auth.VerifySignUpActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.auth.SignInActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.auth.SignUpActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.TaskDetailActivity"
             android:exported="false">
             <meta-data

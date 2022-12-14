@@ -29,6 +29,15 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button MainButtonAllTasks;
 
   @NonNull
+  public final Button MainButtonSignIn;
+
+  @NonNull
+  public final Button MainButtonSignOut;
+
+  @NonNull
+  public final Button MainButtonSignUp;
+
+  @NonNull
   public final ImageView MainIVToUserProfile;
 
   @NonNull
@@ -38,11 +47,16 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView MainTVUsername;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button MainButtonAddTask,
-      @NonNull Button MainButtonAllTasks, @NonNull ImageView MainIVToUserProfile,
-      @NonNull RecyclerView MainRV, @NonNull TextView MainTVUsername) {
+      @NonNull Button MainButtonAllTasks, @NonNull Button MainButtonSignIn,
+      @NonNull Button MainButtonSignOut, @NonNull Button MainButtonSignUp,
+      @NonNull ImageView MainIVToUserProfile, @NonNull RecyclerView MainRV,
+      @NonNull TextView MainTVUsername) {
     this.rootView = rootView;
     this.MainButtonAddTask = MainButtonAddTask;
     this.MainButtonAllTasks = MainButtonAllTasks;
+    this.MainButtonSignIn = MainButtonSignIn;
+    this.MainButtonSignOut = MainButtonSignOut;
+    this.MainButtonSignUp = MainButtonSignUp;
     this.MainIVToUserProfile = MainIVToUserProfile;
     this.MainRV = MainRV;
     this.MainTVUsername = MainTVUsername;
@@ -87,6 +101,24 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.MainButtonSignIn;
+      Button MainButtonSignIn = ViewBindings.findChildViewById(rootView, id);
+      if (MainButtonSignIn == null) {
+        break missingId;
+      }
+
+      id = R.id.MainButtonSignOut;
+      Button MainButtonSignOut = ViewBindings.findChildViewById(rootView, id);
+      if (MainButtonSignOut == null) {
+        break missingId;
+      }
+
+      id = R.id.MainButtonSignUp;
+      Button MainButtonSignUp = ViewBindings.findChildViewById(rootView, id);
+      if (MainButtonSignUp == null) {
+        break missingId;
+      }
+
       id = R.id.MainIVToUserProfile;
       ImageView MainIVToUserProfile = ViewBindings.findChildViewById(rootView, id);
       if (MainIVToUserProfile == null) {
@@ -106,7 +138,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, MainButtonAddTask,
-          MainButtonAllTasks, MainIVToUserProfile, MainRV, MainTVUsername);
+          MainButtonAllTasks, MainButtonSignIn, MainButtonSignOut, MainButtonSignUp,
+          MainIVToUserProfile, MainRV, MainTVUsername);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2704,6 +2704,9 @@ id FirstFragment
 id META
 id MainButtonAddTask
 id MainButtonAllTasks
+id MainButtonSignIn
+id MainButtonSignOut
+id MainButtonSignUp
 id MainIVToUserProfile
 id MainRV
 id MainTVUsername
@@ -2714,6 +2717,12 @@ id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
 id SecondFragment
+id SignInButton
+id SignInETEmail
+id SignInETPassword
+id SignUpButtonSubmit
+id SignUpETEmail
+id SignUpETPassword
 id TOP_END
 id TOP_START
 id TaskFragTVTaskDesc
@@ -2722,6 +2731,8 @@ id TaskFragment
 id UserProfileETUsername
 id UserProfileSpinnerTeam
 id UserProfileSubmitButton
+id VerifyButtonSubmit
+id VerifyETCode
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3188,6 +3199,13 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
+id textView10
+id textView2
+id textView3
+id textView4
+id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3366,8 +3384,11 @@ layout activity_add_task
 layout activity_all_tasks
 layout activity_dev_menu
 layout activity_main
+layout activity_sign_in
+layout activity_sign_up
 layout activity_task_detail
 layout activity_user_profile
+layout activity_verify_sign_up
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
