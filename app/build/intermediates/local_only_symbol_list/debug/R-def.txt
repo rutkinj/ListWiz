@@ -16,6 +16,7 @@ id AddETTaskTitle
 id AddTVTaskDescHeader
 id AddTVTaskTitleHeader
 id AddTVTitle
+id AddTaskButtonAddImage
 id AddTaskSpinnerStatus
 id AddTaskSpinnerTeam
 id AllTVTitle
@@ -38,6 +39,7 @@ id SignInETPassword
 id SignUpButtonSubmit
 id SignUpETEmail
 id SignUpETPassword
+id TaskDetailIV
 id TaskFragTVTaskDesc
 id TaskFragTVTaskName
 id TaskFragment

@@ -17,6 +17,7 @@ query GetTask($id: ID!) {
     description
     status
     createdDateTime
+    s3ImageKey
     createdAt
     updatedAt
   }
@@ -41,6 +42,7 @@ query ListTasks(
       description
       status
       createdDateTime
+      s3ImageKey
       createdAt
       updatedAt
     }
@@ -60,6 +62,7 @@ query GetTaskOwner($id: ID!) {
         description
         status
         createdDateTime
+        s3ImageKey
         createdAt
         updatedAt
       }
@@ -118,6 +121,7 @@ query TasksByTaskOwnerIDAndName(
       description
       status
       createdDateTime
+      s3ImageKey
       createdAt
       updatedAt
     }

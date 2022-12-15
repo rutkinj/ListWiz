@@ -17,6 +17,9 @@
       },
       "auth": {
         "listwiz810be001": {}
+      },
+      "storage": {
+        "s3bc4e8c68": {}
       }
     }
   }

@@ -4,6 +4,7 @@ package com.jrutkin.listwiz.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,13 +29,17 @@ public final class ActivityTaskDetailBinding implements ViewBinding {
   @NonNull
   public final TextView DetailTVTaskStatus;
 
+  @NonNull
+  public final ImageView TaskDetailIV;
+
   private ActivityTaskDetailBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView DetailTVTaskDesc, @NonNull TextView DetailTVTaskName,
-      @NonNull TextView DetailTVTaskStatus) {
+      @NonNull TextView DetailTVTaskStatus, @NonNull ImageView TaskDetailIV) {
     this.rootView = rootView;
     this.DetailTVTaskDesc = DetailTVTaskDesc;
     this.DetailTVTaskName = DetailTVTaskName;
     this.DetailTVTaskStatus = DetailTVTaskStatus;
+    this.TaskDetailIV = TaskDetailIV;
   }
 
   @Override
@@ -82,8 +87,14 @@ public final class ActivityTaskDetailBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.TaskDetailIV;
+      ImageView TaskDetailIV = ViewBindings.findChildViewById(rootView, id);
+      if (TaskDetailIV == null) {
+        break missingId;
+      }
+
       return new ActivityTaskDetailBinding((ConstraintLayout) rootView, DetailTVTaskDesc,
-          DetailTVTaskName, DetailTVTaskStatus);
+          DetailTVTaskName, DetailTVTaskStatus, TaskDetailIV);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

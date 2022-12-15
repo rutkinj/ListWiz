@@ -1,12 +1,21 @@
 package com.jrutkin.listwiz.activities;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.OpenableColumns;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -18,6 +27,8 @@ import com.amplifyframework.datastore.generated.model.Task;
 import com.amplifyframework.datastore.generated.model.TaskOwner;
 import com.jrutkin.listwiz.R;
 
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -30,11 +41,15 @@ public class AddTaskActivity extends AppCompatActivity {
     Spinner statusSpinner;
     Spinner teamSpinner;
     CompletableFuture<List<TaskOwner>> taskOwnersFuture = null;
+    ActivityResultLauncher<Intent> activityResultLauncher;
+    private String s3ImageKey = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_task);
+
+        activityResultLauncher = getImagePickingActivityResultLauncher();
 
         // completable future
         taskOwnersFuture = new CompletableFuture<>();
@@ -59,9 +74,9 @@ public class AddTaskActivity extends AppCompatActivity {
                 });
 
         // SETUP
+        addImageButtonSetup();
         statusSpinnerSetup();
         buttonSetup();
-//        dummyOwnersSetup();
     }
 
     private void buttonSetup() {
@@ -88,6 +103,7 @@ public class AddTaskActivity extends AppCompatActivity {
                     .taskOwner(selectedOwner)
                     .description(((EditText)findViewById(R.id.AddETTaskDesc)).getText().toString())
                     .status((StatusEnum) statusSpinner.getSelectedItem())
+                    .s3ImageKey(s3ImageKey)
                     .build();
             // ADD TO DB
             Amplify.API.mutate(
@@ -119,6 +135,85 @@ public class AddTaskActivity extends AppCompatActivity {
         ));
     }
 
+    public void addImageButtonSetup(){
+        findViewById(R.id.AddTaskButtonAddImage).setOnClickListener(view -> {
+            launchImageSelectionIntent();
+        });
+    }
+
+    public void launchImageSelectionIntent(){
+        Intent goToImageSelectionIntent = new Intent(Intent.ACTION_GET_CONTENT);
+        goToImageSelectionIntent.setType("*/*");// need to specify filetype, even if it's just double wildcard lol
+        goToImageSelectionIntent.putExtra(Intent.EXTRA_MIME_TYPES, new String[]{"image/jpeg", "image/png"});
+        activityResultLauncher.launch(goToImageSelectionIntent);
+    }
+
+    private ActivityResultLauncher<Intent> getImagePickingActivityResultLauncher(){
+        ActivityResultLauncher<Intent> imagePickingActivityResultLauncher =
+            registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                    result -> {
+                        Uri pickedImageFileUri = result.getData().getData();
+                        try {
+                            InputStream pickedImageInputStream = getContentResolver().openInputStream(pickedImageFileUri);
+                            String pickedImageFilename = getFileNameFromUri(pickedImageFileUri);
+                            Log.i(TAG, "Something input stream. Filename: " + pickedImageFilename);
+                            uploadInputStreamToS3(pickedImageInputStream, pickedImageFilename, pickedImageFileUri);
+                        } catch (FileNotFoundException fileNotFoundException){
+                            Log.e(TAG, "Failed to get file from file picker: " + fileNotFoundException.getMessage());
+                        }
+                    }
+            );
+        return imagePickingActivityResultLauncher;
+    }
+
+    private void uploadInputStreamToS3(InputStream pickedImageInputStream, String pickedImageFilename, Uri pickedImageFileUri){
+        Amplify.Storage.uploadInputStream(
+                pickedImageFilename,
+                pickedImageInputStream,
+                success -> {
+                    Log.i(TAG, "Successfully uploaded to S3");
+                    s3ImageKey = success.getKey();
+                    ImageView uploadedImage = findViewById(R.id.AddTaskButtonAddImage);
+                    InputStream pickedImageInputStreamCopy = null;
+                    try {
+                        pickedImageInputStreamCopy = getContentResolver().openInputStream(pickedImageFileUri);
+                    } catch (FileNotFoundException fileNotFoundException){
+                        Log.e(TAG, "Couldn't copy image stream: " + fileNotFoundException.getMessage());
+                    }
+                    uploadedImage.setImageBitmap(BitmapFactory.decodeStream(pickedImageInputStreamCopy));
+                },
+                failure -> Log.e(TAG, "Failed to upload file to S3: " + pickedImageFilename + failure.getMessage())
+        );
+    }
+
+    private void saveTask(){
+
+    }
+
+    // Taken from https://stackoverflow.com/a/25005243/16889809
+    @SuppressLint("Range")
+    public String getFileNameFromUri(Uri uri) {
+        String result = null;
+        if (uri.getScheme().equals("content")) {
+            Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+            try {
+                if (cursor != null && cursor.moveToFirst()) {
+                    result = cursor.getString(cursor.getColumnIndex(OpenableColumns.DISPLAY_NAME));
+                }
+            } finally {
+                cursor.close();
+            }
+        }
+        if (result == null) {
+            result = uri.getPath();
+            int cut = result.lastIndexOf('/');
+            if (cut != -1) {
+                result = result.substring(cut + 1);
+            }
+        }
+        return result;
+    }
     // hardcoded teams, add to aws db
     public void dummyOwnersSetup(){
         TaskOwner dummy1 = TaskOwner.builder()

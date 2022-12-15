@@ -18,8 +18,8 @@
 
     <TextView
         android:id="@+id/DetailTVTaskDesc"
-        android:layout_width="279dp"
-        android:layout_height="335dp"
+        android:layout_width="280dp"
+        android:layout_height="128dp"
         android:layout_marginTop="52dp"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dolor odio, posuere a vulputate nec, euismod vitae massa. Etiam facilisis malesuada nisl ac maximus. Nulla eu nisl a sem tempus consequat nec eu mi. Sed vehicula tortor eu ante tristique, at vehicula mi imperdiet. Fusce interdum lobortis quam at vehicula. Ut ut tempor mauris. In placerat tempor sem, cursus pretium massa eleifend vitae. Donec ornare sapien vitae nisl volutpat, aliquet semper urna tempus. Phasellus ut euismod ante. Donec blandit tincidunt tempor. Duis rhoncus nulla nisl, id dapibus magna ullamcorper quis. Duis ullamcorper tellus at nibh dictum placerat. Quisque a suscipit lectus. Pellentesque congue aliquet elementum. Cras commodo lacus vitae tortor imperdiet, at rhoncus sem facilisis."
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,4 +35,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/TaskDetailIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DetailTVTaskDesc"
+        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
