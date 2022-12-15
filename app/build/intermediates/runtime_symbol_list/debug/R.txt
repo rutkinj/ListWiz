@@ -2730,6 +2730,7 @@ int id SignUpETEmail 0x7f080027
 int id SignUpETPassword 0x7f080028
 int id TOP_END 0x7f080029
 int id TOP_START 0x7f08002a
+int id TaskDetailIV 0x7f08023f
 int id TaskFragTVTaskDesc 0x7f08002b
 int id TaskFragTVTaskName 0x7f08002c
 int id TaskFragment 0x7f08002d

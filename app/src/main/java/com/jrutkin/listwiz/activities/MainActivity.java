@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String TASK_DESC_TAG = "taskDesc";
     public static final String TASK_NAME_TAG = "taskName";
     public static final String TASK_STATUS_TAG = "taskStatus";
+    public static final String TASK_IMAGE_KEY_TAG = "taskImageKey";
 
     SharedPreferences sharedPrefs;
     private List<Task> taskList;
