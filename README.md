@@ -41,4 +41,4 @@ ListWiz is a ToDo list app! A user can set their username and team and create ta
 - 12/8 -> Removes local databse integration, adds aws amplify integration
 - 12/12 -> Adds task owners/teams to db structure. Changes reflected on: AddTask, UserProfile, and Main
 - 12/13 -> Enables signup/login with cognito. No cognito username display...
-- 12/14 -> Adds option for task images using S3 integration. These images are viewable on the tasks details page.
+- 12/14 -> Adds option for task images using S3 integration. These images are viewable on the tasks details page
