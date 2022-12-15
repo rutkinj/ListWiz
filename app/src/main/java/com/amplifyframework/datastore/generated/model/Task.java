@@ -33,12 +33,14 @@ public final class Task implements Model {
   public static final QueryField DESCRIPTION = field("Task", "description");
   public static final QueryField STATUS = field("Task", "status");
   public static final QueryField CREATED_DATE_TIME = field("Task", "createdDateTime");
+  public static final QueryField S3_IMAGE_KEY = field("Task", "s3ImageKey");
   private final @ModelField(targetType="ID", isRequired = true) String id;
   private final @ModelField(targetType="String", isRequired = true) String name;
   private final @ModelField(targetType="TaskOwner") @BelongsTo(targetName = "taskOwnerID", targetNames = {"taskOwnerID"}, type = TaskOwner.class) TaskOwner taskOwner;
   private final @ModelField(targetType="String") String description;
   private final @ModelField(targetType="StatusEnum") StatusEnum status;
   private final @ModelField(targetType="AWSDateTime") Temporal.DateTime createdDateTime;
+  private final @ModelField(targetType="String") String s3ImageKey;
   private @ModelField(targetType="AWSDateTime", isReadOnly = true) Temporal.DateTime createdAt;
   private @ModelField(targetType="AWSDateTime", isReadOnly = true) Temporal.DateTime updatedAt;
   public String resolveIdentifier() {
@@ -69,6 +71,10 @@ public final class Task implements Model {
       return createdDateTime;
   }
   
+  public String getS3ImageKey() {
+      return s3ImageKey;
+  }
+  
   public Temporal.DateTime getCreatedAt() {
       return createdAt;
   }
@@ -77,13 +83,14 @@ public final class Task implements Model {
       return updatedAt;
   }
   
-  private Task(String id, String name, TaskOwner taskOwner, String description, StatusEnum status, Temporal.DateTime createdDateTime) {
+  private Task(String id, String name, TaskOwner taskOwner, String description, StatusEnum status, Temporal.DateTime createdDateTime, String s3ImageKey) {
     this.id = id;
     this.name = name;
     this.taskOwner = taskOwner;
     this.description = description;
     this.status = status;
     this.createdDateTime = createdDateTime;
+    this.s3ImageKey = s3ImageKey;
   }
   
   @Override
@@ -100,6 +107,7 @@ public final class Task implements Model {
               ObjectsCompat.equals(getDescription(), task.getDescription()) &&
               ObjectsCompat.equals(getStatus(), task.getStatus()) &&
               ObjectsCompat.equals(getCreatedDateTime(), task.getCreatedDateTime()) &&
+              ObjectsCompat.equals(getS3ImageKey(), task.getS3ImageKey()) &&
               ObjectsCompat.equals(getCreatedAt(), task.getCreatedAt()) &&
               ObjectsCompat.equals(getUpdatedAt(), task.getUpdatedAt());
       }
@@ -114,6 +122,7 @@ public final class Task implements Model {
       .append(getDescription())
       .append(getStatus())
       .append(getCreatedDateTime())
+      .append(getS3ImageKey())
       .append(getCreatedAt())
       .append(getUpdatedAt())
       .toString()
@@ -130,6 +139,7 @@ public final class Task implements Model {
       .append("description=" + String.valueOf(getDescription()) + ", ")
       .append("status=" + String.valueOf(getStatus()) + ", ")
       .append("createdDateTime=" + String.valueOf(getCreatedDateTime()) + ", ")
+      .append("s3ImageKey=" + String.valueOf(getS3ImageKey()) + ", ")
       .append("createdAt=" + String.valueOf(getCreatedAt()) + ", ")
       .append("updatedAt=" + String.valueOf(getUpdatedAt()))
       .append("}")
@@ -155,6 +165,7 @@ public final class Task implements Model {
       null,
       null,
       null,
+      null,
       null
     );
   }
@@ -165,7 +176,8 @@ public final class Task implements Model {
       taskOwner,
       description,
       status,
-      createdDateTime);
+      createdDateTime,
+      s3ImageKey);
   }
   public interface NameStep {
     BuildStep name(String name);
@@ -179,6 +191,7 @@ public final class Task implements Model {
     BuildStep description(String description);
     BuildStep status(StatusEnum status);
     BuildStep createdDateTime(Temporal.DateTime createdDateTime);
+    BuildStep s3ImageKey(String s3ImageKey);
   }
   
 
@@ -189,6 +202,7 @@ public final class Task implements Model {
     private String description;
     private StatusEnum status;
     private Temporal.DateTime createdDateTime;
+    private String s3ImageKey;
     @Override
      public Task build() {
         String id = this.id != null ? this.id : UUID.randomUUID().toString();
@@ -199,7 +213,8 @@ public final class Task implements Model {
           taskOwner,
           description,
           status,
-          createdDateTime);
+          createdDateTime,
+          s3ImageKey);
     }
     
     @Override
@@ -233,6 +248,12 @@ public final class Task implements Model {
         return this;
     }
     
+    @Override
+     public BuildStep s3ImageKey(String s3ImageKey) {
+        this.s3ImageKey = s3ImageKey;
+        return this;
+    }
+    
     /**
      * @param id id
      * @return Current Builder instance, for fluent method chaining
@@ -245,13 +266,14 @@ public final class Task implements Model {
   
 
   public final class CopyOfBuilder extends Builder {
-    private CopyOfBuilder(String id, String name, TaskOwner taskOwner, String description, StatusEnum status, Temporal.DateTime createdDateTime) {
+    private CopyOfBuilder(String id, String name, TaskOwner taskOwner, String description, StatusEnum status, Temporal.DateTime createdDateTime, String s3ImageKey) {
       super.id(id);
       super.name(name)
         .taskOwner(taskOwner)
         .description(description)
         .status(status)
-        .createdDateTime(createdDateTime);
+        .createdDateTime(createdDateTime)
+        .s3ImageKey(s3ImageKey);
     }
     
     @Override
@@ -277,6 +299,11 @@ public final class Task implements Model {
     @Override
      public CopyOfBuilder createdDateTime(Temporal.DateTime createdDateTime) {
       return (CopyOfBuilder) super.createdDateTime(createdDateTime);
+    }
+    
+    @Override
+     public CopyOfBuilder s3ImageKey(String s3ImageKey) {
+      return (CopyOfBuilder) super.s3ImageKey(s3ImageKey);
     }
   }
   

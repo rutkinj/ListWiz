@@ -1,42 +1,38 @@
 [
     {
-        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-mergeDebugResources-39:/layout/activity_main.xml",
-        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/layout/activity_main.xml"
+        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-42:/layout/activity_sign_up.xml",
+        "source": "com.jrutkin.listwiz.app-main-45:/layout/activity_sign_up.xml"
     },
     {
-        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-mergeDebugResources-39:/layout/fragment_task.xml",
-        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/layout/fragment_task.xml"
+        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-42:/layout/fragment_task.xml",
+        "source": "com.jrutkin.listwiz.app-main-45:/layout/fragment_task.xml"
     },
     {
-        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-mergeDebugResources-39:/layout/activity_user_profile.xml",
-        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/layout/activity_user_profile.xml"
+        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-42:/layout/activity_add_task.xml",
+        "source": "com.jrutkin.listwiz.app-main-45:/layout/activity_add_task.xml"
     },
     {
-        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-mergeDebugResources-39:/layout/activity_all_tasks.xml",
-        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/layout/activity_all_tasks.xml"
+        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-42:/layout/activity_verify_sign_up.xml",
+        "source": "com.jrutkin.listwiz.app-main-45:/layout/activity_verify_sign_up.xml"
     },
     {
-        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-mergeDebugResources-39:/layout/activity_task_detail.xml",
-        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/layout/activity_task_detail.xml"
+        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "com.jrutkin.listwiz.app-main-45:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-mergeDebugResources-39:/layout/activity_sign_up.xml",
-        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/layout/activity_sign_up.xml"
+        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-42:/layout/activity_task_detail.xml",
+        "source": "com.jrutkin.listwiz.app-main-45:/layout/activity_task_detail.xml"
     },
     {
-        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-39:/layout/activity_main.xml",
-        "source": "com.jrutkin.listwiz.app-main-42:/layout/activity_main.xml"
+        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-42:/layout/activity_user_profile.xml",
+        "source": "com.jrutkin.listwiz.app-main-45:/layout/activity_user_profile.xml"
     },
     {
-        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-mergeDebugResources-39:/layout/activity_sign_in.xml",
-        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/layout/activity_sign_in.xml"
+        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-42:/layout/activity_sign_in.xml",
+        "source": "com.jrutkin.listwiz.app-main-45:/layout/activity_sign_in.xml"
     },
     {
-        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-mergeDebugResources-39:/layout/activity_verify_sign_up.xml",
-        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/layout/activity_verify_sign_up.xml"
-    },
-    {
-        "merged": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-mergeDebugResources-39:/layout/activity_add_task.xml",
-        "source": "/Users/jsr/.gradle/daemon/7.4/com.jrutkin.listwiz.app-main-42:/layout/activity_add_task.xml"
+        "merged": "com.jrutkin.listwiz.app-mergeDebugResources-42:/layout/activity_all_tasks.xml",
+        "source": "com.jrutkin.listwiz.app-main-45:/layout/activity_all_tasks.xml"
     }
 ]

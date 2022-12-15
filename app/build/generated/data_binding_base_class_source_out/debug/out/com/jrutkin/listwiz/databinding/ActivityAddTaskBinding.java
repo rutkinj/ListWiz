@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -41,6 +42,9 @@ public final class ActivityAddTaskBinding implements ViewBinding {
   public final TextView AddTVTitle;
 
   @NonNull
+  public final ImageView AddTaskButtonAddImage;
+
+  @NonNull
   public final Spinner AddTaskSpinnerStatus;
 
   @NonNull
@@ -49,8 +53,8 @@ public final class ActivityAddTaskBinding implements ViewBinding {
   private ActivityAddTaskBinding(@NonNull ConstraintLayout rootView, @NonNull Button AddButton,
       @NonNull EditText AddETTaskDesc, @NonNull EditText AddETTaskTitle,
       @NonNull TextView AddTVTaskDescHeader, @NonNull TextView AddTVTaskTitleHeader,
-      @NonNull TextView AddTVTitle, @NonNull Spinner AddTaskSpinnerStatus,
-      @NonNull Spinner AddTaskSpinnerTeam) {
+      @NonNull TextView AddTVTitle, @NonNull ImageView AddTaskButtonAddImage,
+      @NonNull Spinner AddTaskSpinnerStatus, @NonNull Spinner AddTaskSpinnerTeam) {
     this.rootView = rootView;
     this.AddButton = AddButton;
     this.AddETTaskDesc = AddETTaskDesc;
@@ -58,6 +62,7 @@ public final class ActivityAddTaskBinding implements ViewBinding {
     this.AddTVTaskDescHeader = AddTVTaskDescHeader;
     this.AddTVTaskTitleHeader = AddTVTaskTitleHeader;
     this.AddTVTitle = AddTVTitle;
+    this.AddTaskButtonAddImage = AddTaskButtonAddImage;
     this.AddTaskSpinnerStatus = AddTaskSpinnerStatus;
     this.AddTaskSpinnerTeam = AddTaskSpinnerTeam;
   }
@@ -125,6 +130,12 @@ public final class ActivityAddTaskBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.AddTaskButtonAddImage;
+      ImageView AddTaskButtonAddImage = ViewBindings.findChildViewById(rootView, id);
+      if (AddTaskButtonAddImage == null) {
+        break missingId;
+      }
+
       id = R.id.AddTaskSpinnerStatus;
       Spinner AddTaskSpinnerStatus = ViewBindings.findChildViewById(rootView, id);
       if (AddTaskSpinnerStatus == null) {
@@ -139,7 +150,7 @@ public final class ActivityAddTaskBinding implements ViewBinding {
 
       return new ActivityAddTaskBinding((ConstraintLayout) rootView, AddButton, AddETTaskDesc,
           AddETTaskTitle, AddTVTaskDescHeader, AddTVTaskTitleHeader, AddTVTitle,
-          AddTaskSpinnerStatus, AddTaskSpinnerTeam);
+          AddTaskButtonAddImage, AddTaskSpinnerStatus, AddTaskSpinnerTeam);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

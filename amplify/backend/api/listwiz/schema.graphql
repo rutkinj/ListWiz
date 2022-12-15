@@ -9,6 +9,7 @@ type Task @model @auth(rules: [{allow: public}]){
     description: String
     status: StatusEnum
     createdDateTime: AWSDateTime
+    s3ImageKey: String
 }
 
 enum StatusEnum{
