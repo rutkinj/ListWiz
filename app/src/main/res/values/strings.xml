@@ -11,4 +11,28 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_task">My Task</string>
+    <string name="my_desc">My Desc</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Task Description</string>
+    <string name="add_task">Add Task</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="pick_a_team">Pick a Team</string>
+    <string name="textview">TextView</string>
+    <string name="task_name">Task Name</string>
+    <string name="task_image">Task image</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="submit">SUBMIT</string>
+    <string name="enter_code">enter code</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="password">Password</string>
+    <string name="email_website_com">email@website.com</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="all_tasks">All Tasks</string>
+    <string name="image_but_why">image, but why</string>
+    <string name="username">Username</string>
+    <string name="placeholder_image">Placeholder Image</string>
+    <string name="sign_out">sign out</string>
+    <string name="task_status">task status</string>
 </resources>
