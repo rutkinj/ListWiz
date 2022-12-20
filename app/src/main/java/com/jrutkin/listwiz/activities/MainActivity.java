@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button allTasksButton = MainActivity.this.findViewById(R.id.MainButtonAllTasks);
         allTasksButton.setOnClickListener(view -> {
-            Intent goToAllTasksActivity = new Intent(this, AllTasksActivity.class);
+            Intent goToAllTasksActivity = new Intent(this, LocationActivity.class);
             startActivity(goToAllTasksActivity);
         });
 

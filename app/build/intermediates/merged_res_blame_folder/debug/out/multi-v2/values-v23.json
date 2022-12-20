@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.jrutkin.listwiz.app-mergeDebugResources-41:/values-v23/values-v23.xml",
+            "outputFile": "com.jrutkin.listwiz.app-mergeDebugResources-43:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/Users/jsr/.gradle/caches/transforms-3/8254f7a56a6d62d947ec6639152035e2/transformed/work-runtime-2.7.1/res/values-v23/values-v23.xml",

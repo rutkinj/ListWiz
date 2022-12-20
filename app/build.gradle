@@ -41,11 +41,16 @@ dependencies {
     implementation 'com.amplifyframework:aws-storage-s3:2.0.0'
     // cognito
     implementation 'com.amplifyframework:aws-auth-cognito:2.0.0'
+    //google play location
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
 
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    // these don't play nice with play services location, why??
+//    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+//    implementation 'androidx.navigation:navigation-ui:2.5.3'
 //    these don't play nice w amplify, looks like these are old and get overwritten
 //    implementation 'androidx.navigation:navigation-fragment:2.4.1'
 //    implementation 'androidx.navigation:navigation-ui:2.4.1'
