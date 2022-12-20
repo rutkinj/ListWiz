@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "com.jrutkin.listwiz.app-mergeDebugResources-41:/values-land/values-land.xml",
+            "outputFile": "com.jrutkin.listwiz.app-mergeDebugResources-43:/values-land/values-land.xml",
             "map": [
                 {
                     "source": "/Users/jsr/Documents/codefellows/labs/ListWiz/app/src/main/res/values-land/dimens.xml",
                     "from": {
                         "startLines": "1",
-                        "startColumns": "6",
-                        "startOffsets": "18",
-                        "endColumns": "43",
-                        "endOffsets": "55"
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "41",
+                        "endOffsets": "53"
                     },
                     "to": {
                         "startLines": "5",

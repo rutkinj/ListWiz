@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Always include this permission -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Include only if your app benefits from precise location access. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:name=".ListWizAmplifyApplication"
         android:allowBackup="true"
@@ -13,6 +19,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ListWiz"
         tools:targetApi="31">
+
+        <activity
+            android:name=".activities.LocationActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Location"
+            android:exported="false"
+            android:label="@string/title_activity_location"
+            android:theme="@style/Theme.ListWiz.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".activities.auth.VerifySignUpActivity"
             android:exported="false">
