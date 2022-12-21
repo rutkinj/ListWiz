@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button allTasksButton = MainActivity.this.findViewById(R.id.MainButtonAllTasks);
         allTasksButton.setOnClickListener(view -> {
-            Intent goToAllTasksActivity = new Intent(this, AllTasksActivity.class);
+            Intent goToAllTasksActivity = new Intent(this, AnalyticsActivity.class);
             startActivity(goToAllTasksActivity);
         });
 
@@ -131,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.MainButtonSignIn).setOnClickListener(view -> {
             Intent goToSignInActivity = new Intent(this, SignInActivity.class);
+            goToSignInActivity.addCategory("LAUNCHER:true");
             startActivity(goToSignInActivity);
         });
 

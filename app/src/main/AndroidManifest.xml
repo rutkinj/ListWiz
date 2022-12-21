@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+<!--    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="32" />-->
     <application
         android:name=".ListWizAmplifyApplication"
         android:allowBackup="true"
@@ -14,22 +14,29 @@
         android:theme="@style/Theme.ListWiz"
         tools:targetApi="31">
         <activity
-            android:name=".activities.auth.VerifySignUpActivity"
+            android:name=".activities.AnalyticsActivity"
             android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.auth.VerifySignUpActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".activities.auth.SignInActivity"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".activities.auth.SignUpActivity"
-            android:exported="false">
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

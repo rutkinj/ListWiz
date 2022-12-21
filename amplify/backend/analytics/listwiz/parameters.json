@@ -1,0 +1,21 @@
+{
+    "appName": "listwiz",
+    "roleName": "pinpointLambdaRoledae1dc28",
+    "cloudformationPolicyName": "cloudformationPolicydae1dc28",
+    "cloudWatchPolicyName": "cloudWatchPolicydae1dc28",
+    "pinpointPolicyName": "pinpointPolicydae1dc28",
+    "authPolicyName": "pinpoint_amplify_dae1dc28",
+    "unauthPolicyName": "pinpoint_amplify_dae1dc28",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

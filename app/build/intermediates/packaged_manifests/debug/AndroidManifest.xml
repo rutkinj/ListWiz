@@ -24,9 +24,9 @@
         </intent>
     </queries>
 
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="32" /> -->
     <application
         android:name="com.jrutkin.listwiz.ListWizAmplifyApplication"
         android:allowBackup="true"
@@ -42,22 +42,29 @@
         android:testOnly="true"
         android:theme="@style/Theme.ListWiz" >
         <activity
-            android:name="com.jrutkin.listwiz.activities.auth.VerifySignUpActivity"
+            android:name="com.jrutkin.listwiz.activities.AnalyticsActivity"
             android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.jrutkin.listwiz.activities.auth.VerifySignUpActivity"
+            android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name="com.jrutkin.listwiz.activities.auth.SignInActivity"
-            android:exported="false" >
+            android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name="com.jrutkin.listwiz.activities.auth.SignUpActivity"
-            android:exported="false" >
+            android:exported="true" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -111,6 +118,30 @@
         <activity
             android:name="com.amplifyframework.devmenu.DeveloperMenuActivity"
             android:theme="@style/OverlayActivity" />
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
 
         <provider
             android:name="androidx.startup.InitializationProvider"
