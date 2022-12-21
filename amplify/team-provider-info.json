@@ -20,6 +20,9 @@
       },
       "storage": {
         "s3bc4e8c68": {}
+      },
+      "analytics": {
+        "listwiz": {}
       }
     }
   }
